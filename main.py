@@ -24,3 +24,5 @@ for pg in BASE_URL:
 
 	availability = soup.find('span', attrs={'class': 'availability-msg'})
 	print (availability.text.strip())
+
+	print ()
