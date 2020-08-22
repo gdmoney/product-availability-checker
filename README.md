@@ -1,1 +1,1 @@
-# BeautifulSoup-product-availability
+## check product availability on the Titan Fitness website
