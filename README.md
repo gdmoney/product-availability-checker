@@ -2,7 +2,7 @@
 
 
 ### Things to add
-- automate to run daily - DONE - using Windows Task Scheduler
+- automate to run daily - **DONE** - using Windows Task Scheduler
 - email only if status =/= Out of Stock
 
 
