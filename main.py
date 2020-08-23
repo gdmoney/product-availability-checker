@@ -34,16 +34,17 @@ for pg in BASE_URL:
 	# create text file
 	with open ('titan.txt', "a") as txt_file:
 		txt_file.write(status + '\n')
-		txt_file.close()
+
+txt_file.close()
 
 
 # email the text file as an attachment
 FROM = 'george.davitiani@gmail.com'
-to = 'george.davitiani@gmail.com'
+TO = 'george.davitiani@gmail.com'
 subject = 'Titan Fitness'
 contents = 'titan.txt'
 yag = yagmail.SMTP(FROM, 'hkxzacjexgundssc')
-yag.send(to, subject, contents)
+yag.send(TO, subject, contents)
 
 
 # delete the file
