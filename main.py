@@ -12,7 +12,7 @@ BASE_URL = [
 'https://www.titan.fitness/strength/weight-plates/cast-iron-plates/cast-iron-olympic-weight-plates-%7C-245-lb-set/430230.html'
 ]
 
-# loop through the URLs we loaded above
+# loop through the URLs above
 for pg in BASE_URL:
 	# query the website and return the html to the variable 'page'
 	page = requests.get(pg)
