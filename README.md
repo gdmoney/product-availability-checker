@@ -2,7 +2,7 @@
 
 
 ### Things to add
-- automate running daily
+- automate to run daily
 - email only if status =/= Out of Stock
 
 
