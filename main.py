@@ -39,7 +39,6 @@ for pg in BASE_URL:
 		
 txt_file.close()
 
-
 # email the text file as an attachment
 FROM = 'george.davitiani@gmail.com'
 TO = 'george.davitiani@gmail.com'
@@ -47,7 +46,6 @@ subject = 'Titan Fitness'
 contents = 'titan.txt'
 yag = yagmail.SMTP(FROM, 'hkxzacjexgundssc')
 yag.send(TO, subject, contents)
-
 
 # delete the file
 os.remove('titan.txt')
