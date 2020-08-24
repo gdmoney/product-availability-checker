@@ -1,6 +1,4 @@
-import requests
-import yagmail
-import os
+import requests, yagmail, os
 from bs4 import BeautifulSoup
 
 BASE_URL = [
