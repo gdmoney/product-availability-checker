@@ -35,7 +35,8 @@ for pg in BASE_URL:
 	# create text file
 	with open ('titan.txt', "a") as txt_file:
 		txt_file.write(status + '\n')
-
+		txt_file.write('\n')
+		
 txt_file.close()
 
 
