@@ -24,8 +24,6 @@ for page in BASE_URL:
 	availability = (availability_box.text.strip())
 
 	status = product_name + " - " + availability
-	#print (status)
-	#print ()
 
 	# create text file
 	with open ('titan.txt', "a") as txt_file:
