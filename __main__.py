@@ -12,12 +12,9 @@ BASE_URL = [
 ]
 
 # loop through the URLs above
-for pg in BASE_URL:
-	# query the website and return the html to the variable 'page'
-	page = requests.get(pg)
-
-	# parse the html using Beautiful Soup and store in variable 'soup'
-	soup = BeautifulSoup(page.content, 'html.parser')
+for page in BASE_URL:
+	# query each website and return html, parse the html using Beautiful Soup and store in variable 'soup'
+	soup = BeautifulSoup(requests.get(page).content, 'html.parser')
 
 	# take out the <div> of name and get its value
 	product_name_box = soup.find('span', attrs={'class': 'h1 product-name'})
