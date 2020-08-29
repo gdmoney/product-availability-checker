@@ -3,7 +3,7 @@
 
 ### Things to add
 - automate to run daily - **DONE** - using Windows Task Scheduler
-- email only if status =/= Out of Stock
+- email only if status =/= Out of Stock - **DONE**
 
 
 
