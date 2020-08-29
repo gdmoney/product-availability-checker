@@ -8,7 +8,9 @@ BASE_URL = [
 'https://www.titan.fitness/racks/squat-stands/t-3-series/t-3-series-short-squat-stand-with-j-hooks/400925.2.html',
 'https://www.titan.fitness/racks/squat-stands/t-3-series/titan-t-3-series-squat-stand-v2/400994.html',
 'https://www.titan.fitness/strength/barbells/olympic/regular-bar-20kg---chrome/430086.html',
-'https://www.titan.fitness/strength/weight-plates/cast-iron-plates/cast-iron-olympic-weight-plates-%7C-245-lb-set/430230.html'
+'https://www.titan.fitness/strength/weight-plates/cast-iron-plates/cast-iron-olympic-weight-plates-%7C-245-lb-set/430230.html',
+'https://www.titan.fitness/strength/dumbbells/rubber-coated-hex/pair-of-75-lb-black-rubber-coated-hex-dumbbells/421076.html',
+'https://www.titan.fitness/strength/dumbbells/rubber-coated-hex/pair-of-100-lb-black-rubber-coated-hex-dumbbells/421101.html'
 ]
 
 # loop through the URLs above
@@ -25,10 +27,9 @@ for page in BASE_URL:
 
 	status = product_name + " - " + availability
 
-	# create text file
+	# create a text file
 	with open ('titan.txt', "a") as txt_file:
-		txt_file.write(status + '\n'+ '\n')
-
+		txt_file.write(status + '\n' + '\n')
 txt_file.close()
 
 # email the text file as an attachment
