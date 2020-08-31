@@ -8,6 +8,7 @@ Queries each website, checks product availability, and send an email if one of t
 ### Things to add
 - automate to run daily - **DONE** - using Windows Task Scheduler
 - email only if status =/= Out of Stock - **DONE**
+- email only the products that are available
 
 
 ### Issues
