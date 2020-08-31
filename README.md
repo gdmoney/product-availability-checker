@@ -1,10 +1,13 @@
-## Check product availability on the Titan Fitness website
+## Check product availability
+
+
+### Description
+Queries each website, checks product availability, and send an email if one of the products is available.
 
 
 ### Things to add
 - automate to run daily - **DONE** - using Windows Task Scheduler
 - email only if status =/= Out of Stock - **DONE**
-
 
 
 ### Issues
