@@ -1,4 +1,6 @@
-import requests, yagmail, os
+import os
+import requests
+import yagmail
 from bs4 import BeautifulSoup
 
 BASE_URL = [
@@ -7,14 +9,10 @@ BASE_URL = [
 'https://www.titan.fitness/racks/squat-stands/x-3-series/x-3-series-tall-squat-stand-with-pull-up-bar-and-spotter-arms/400404.html',
 'https://www.titan.fitness/racks/squat-stands/t-3-series/t-3-series-short-squat-stand-with-j-hooks/400925.2.html',
 'https://www.titan.fitness/racks/squat-stands/t-3-series/titan-t-3-series-squat-stand-v2/400994.html',
-'https://www.titan.fitness/strength/barbells/olympic/regular-bar-20kg---chrome/430086.html',
-'https://www.titan.fitness/strength/barbells/olympic/olympic-power-bar---86-in.-chrome/430087.html',
+'https://www.titan.fitness/strength/weight-plates/bumper-plates/230-lb-set-economy-black-bumper-plates/430117.html',
 'https://www.titan.fitness/strength/weight-plates/cast-iron-plates/cast-iron-olympic-weight-plates-%7C-245-lb-set/430230.html',
 'https://www.titan.fitness/strength/dumbbells/rubber-coated-hex/pair-of-75-lb-black-rubber-coated-hex-dumbbells/421076.html',
-'https://www.titan.fitness/strength/dumbbells/rubber-coated-hex/pair-of-100-lb-black-rubber-coated-hex-dumbbells/421101.html',
-'https://www.titan.fitness/racks/wallmounts/folding-power-racks/t-3-series-tall-folding-power-rack---41-in-depth-v2/400992.html',
-'https://www.titan.fitness/racks/bench-press-rack-w%2F-flip-down-safeties/400597.html',
-'https://www.titan.fitness/strength/barbells/specialty/rackable-hex-trap-bar---v2/430077.2.html'
+'https://www.titan.fitness/strength/dumbbells/rubber-coated-hex/pair-of-100-lb-black-rubber-coated-hex-dumbbells/421101.html'
 ]
 
 # loop through the URLs above
