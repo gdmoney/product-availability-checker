@@ -48,9 +48,7 @@ def send_email():
 # email if one of the  products is available
 if 'In Stock' or 'Backorder' in f.read():
     send_email()
-	f.close()
-else
-	f.close()
+f.close()
 
 # delete the file
 os.remove('titan.txt')
