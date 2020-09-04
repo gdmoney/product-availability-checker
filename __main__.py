@@ -1,3 +1,7 @@
+# install requests
+# install yagmail
+# install beautifulsoup4
+
 import os
 import requests
 import yagmail
@@ -44,7 +48,9 @@ def send_email():
 # email if one of the  products is available
 if 'In Stock' or 'Backorder' in f.read():
     send_email()
-f.close()
+	f.close()
+else
+	f.close()
 
 # delete the file
 os.remove('titan.txt')
