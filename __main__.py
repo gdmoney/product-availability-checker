@@ -1,6 +1,6 @@
-# install requests
-# install yagmail
-# install beautifulsoup4
+# pip install requests
+# pip install yagmail
+# pip install beautifulsoup4
 
 import os
 import requests
