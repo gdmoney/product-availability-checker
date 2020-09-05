@@ -1,8 +1,8 @@
 # Product Availability Checker
 
 ## Description
-Queries each website, checks product availability, and send an email if one of the products is available.
-Can be run on a local computer using `__main.py__` or on **AWS Lambda** using `lambda_function.py`
+Queries each website, checks product availability, and send an email if one of the products is available.  
+Can be run on a local computer with `__main.py__` or on **AWS Lambda** with `lambda_function.py`
 
 
 ## Components
