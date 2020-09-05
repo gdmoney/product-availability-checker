@@ -7,7 +7,7 @@ Can be run on a local computer using `__main.py__` or on **AWS Lambda** using `l
 
 ## Components
 - Python 3.8
-- various Python libraries: **Beautiful Soup**, **Requests**, **YagMail**, etc.
+- various Python libraries: Beautiful Soup, Requests, YagMail, etc.
 - AWS Lambda
 - AWS EventBridge (CloudWatch Events)
 
