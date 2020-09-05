@@ -1,13 +1,23 @@
-## Check product availability
+# Product Availability Checker
 
-
-### Description
+## Description
 Queries each website, checks product availability, and send an email if one of the products is available.
+Can be run on a local computer using `__main.py__` or on **AWS Lambda** using `lambda_function.py`
 
-Can be run on a computer using `__main.py__` or on **AWS Lambda** using `lambda_function.py`
+
+## Components
+- Python 3.8
+- various Python libraries: **Beautiful Soup**, **Requests**, **YagMail**, etc.
+- AWS Lambda
+- AWS EventBridge (CloudWatch Events)
 
 
-### Things to add
+## Usage
+- 
+
+
+
+## Things to add
 - automate to run daily - **DONE** - using Windows Task Scheduler
 - email only if status =/= Out of Stock - **DONE**
 - email only the products that are available
