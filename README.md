@@ -14,7 +14,7 @@ Can be run on a local computer with `__main.py__` or on **AWS Lambda** with `lam
 
 
 ## Usage
-Instructions are for running code on AWS Lambda
+Instructions are for running the code on AWS Lambda.
 - on the local computer, create a new folder and put `lambda_function.py` there
 - copy all the required Python packages from `C:\Users\gdavitiani\AppData\Local\Programs\Python\Python38-32\Lib\site-packages` to this new folder
 - archive all the packages and the `lambda_functions.py` file into a **zip** file
