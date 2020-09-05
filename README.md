@@ -4,6 +4,8 @@
 ### Description
 Queries each website, checks product availability, and send an email if one of the products is available.
 
+Can be run on a computer using '__main.py__' or on **AWS Lambda** using 'lambda_function.py'
+
 
 ### Things to add
 - automate to run daily - **DONE** - using Windows Task Scheduler
