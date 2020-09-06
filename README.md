@@ -25,8 +25,8 @@ Insturctions are for running code in AWS.
 ![](/folder.png)
 
 #### In AWS
-- Lambda => Create functon
-- Author from scratch => name => Python 3.8 => Permissions: Use an existing role
+- Lambda = Create functon
+- Author from scratch > name = Python 3.8 = Permissions: Use an existing role
 - Actions => upload a .zip file > Save
 - Test => Create new test event > Event template: hello-world => Event name => Create  
 
