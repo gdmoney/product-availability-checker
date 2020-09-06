@@ -16,23 +16,23 @@ Can be run locally with `__main.py__` or on **AWS Lambda** with `lambda_function
 ## Usage
 Insturctions are for running code in AWS.
 
-#### On the local computer
+- download the `python.zip` file
+- AWS > Lambda > Create function
+- Author from scratch > name > Python 3.8 > Permissions: Use an existing role
+- Actions > upload a .zip file: `python.zip` > Save
+- Test > Create new test event > Event template: hello-world > Event name > Create
+- Test
+
+- Designer > Add trigger > EventBridge > Rule: Create a new rule > Rule name > Rule type: Schedule expression > Schedule expression: `cron(0 12 * * ? *)`
+
+
+## Build
 - create a new folder
 - put the `lambda_function.py` file there
 - copy all the required Python packages from `C:\Users\gdavitiani\AppData\Local\Programs\Python\Python38-32\Lib\site-packages` to this new folder
 - archive all of the packages and the `lambda_functions.py` file into a **zip** file
 
 ![](/folder.png)
-
-
-#### In AWS
-- Lambda > Create function
-- Author from scratch > name > Python 3.8 > Permissions: Use an existing role
-- Actions > upload a .zip file > Save
-- Test > Create new test event > Event template: hello-world > Event name > Create
-- Test
-
-- Designer > Add trigger > EventBridge > Rule: Create a new rule > Rule name > Rule type: Schedule expression > Schedule expression: `cron(0 12 * * ? *)`
 
 
 ## Things to add
