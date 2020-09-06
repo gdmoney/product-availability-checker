@@ -32,7 +32,7 @@ Can be run on a local computer with `__main.py__` or on **AWS Lambda** with `lam
 - Designer > Add trigger > EventBridge > Rule: Create a new rule > Rule name > 
 - Rule type: Schedule expression > Schedule expression: cron(0 12 * * ? *)
 
-
+a
 ## Things to add
 - automate to run daily - **DONE** - using Windows Task Scheduler
 - email only if status =/= Out of Stock - **DONE**
