@@ -17,7 +17,7 @@ Can be run locally with `__main.py__` or on **AWS Lambda** with `lambda_function
 Insturctions for running code in AWS:
 
 - download the `python.zip` file from `AWS-Lambda`
-- AWS > Lambda > Create function
+- [AWS](https://console.aws.amazon.com) > Lambda > Create function
 - Author from scratch > name > Runtime: Python 3.8 > Permissions: Create a new role with basic Lambda permissions
 - Actions > upload a .zip file: `python.zip` > Save
 - Test > Create new test event > Event template: hello-world > Event name > Create
