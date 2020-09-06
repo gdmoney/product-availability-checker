@@ -22,8 +22,8 @@ Can be run on a local computer with `__main.py__` or on **AWS Lambda** with `lam
 
 ![](/folder.png)
 
+
 #### AWS
-- Python 3.8
 - Lambda > Create function
 - Author from scratch > name > Python 3.8 > Permissions: Use an existing role
 - Actions > upload a .zip file > Save
