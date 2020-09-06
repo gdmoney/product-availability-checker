@@ -23,8 +23,8 @@ Can be run on a local computer with `__main.py__` or on **AWS Lambda** with `lam
 ![](/folder.png)
 
 #### AWS
-- Lambda > Crete functon
-- Author from scratch > name > PYthon 3.8 > Permissions: Use an existing role
+- Lambda > Create functon
+- Author from scratch > name > Python 3.8 > Permissions: Use an existing role
 - Actions > upload a .zip file > Save
 - Test > Create new test event > Event template: hello-world > Event name > Create
 
