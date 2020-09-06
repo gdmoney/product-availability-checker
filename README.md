@@ -25,10 +25,10 @@ Insturctions are for running code in AWS.
 ![](/folder.png)
 
 #### In AWS
-- Lambda > Create functon
-- Author from scratch > name > Python 3.8 > Permissions: Use an existing role
-- Actions > upload a .zip file > Save
-- Test > Create new test event > Event template: hello-world > Event name > Create  
+- Lambda => Create functon
+- Author from scratch => name => Python 3.8 => Permissions: Use an existing role
+- Actions => upload a .zip file > Save
+- Test => Create new test event > Event template: hello-world => Event name => Create  
 
 - Designer > Add trigger > EventBridge > Rule: Create a new rule > Rule name > Rule type: Schedule expression > Schedule expression: `cron(0 12 * * ? *)`
 
