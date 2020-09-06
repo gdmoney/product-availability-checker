@@ -14,7 +14,7 @@ Can be run locally with `__main.py__` or on **AWS Lambda** with `lambda_function
 
 
 ## Usage
-Insturctions are for running code in AWS.
+Insturctions for running code in AWS:
 
 - download the `python.zip` file from `AWS-Lambda`
 - AWS > Lambda > Create function
