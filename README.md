@@ -32,13 +32,12 @@ Can be run on a local computer with `__main.py__` or on **AWS Lambda** with `lam
 - Designer > Add trigger > EventBridge > Rule: Create a new rule > Rule name > 
 - Rule type: Schedule expression > Schedule expression: cron(0 12 * * ? *)
 
-a
+
 ## Things to add
-- automate to run daily - **DONE** - using Windows Task Scheduler
+- automate to run daily - **DONE** - using Windows Task Scheduler when running locally or EventBridge when running in AWS
 - email only if status =/= Out of Stock - **DONE**
 - email only the products that are available
 
 
-### Issues
- - ~~when the email code is inside the for loop, it emails 6 separate messages~~
- - ~~when it's outside of the loop, it emails once with the status of the first item only~~
+## Issues
+ - sometimes sends email even when all of the products are out of stock
