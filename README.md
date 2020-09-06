@@ -30,7 +30,7 @@ Insturctions for running code in AWS:
 ## Build
 - create a new folder
 - put the `lambda_function.py` file there
-- copy all the required Python packages from `C:\Users\gdavitiani\AppData\Local\Programs\Python\Python38-32\Lib\site-packages` to this new folder
+- copy all the required Python packages from `C:\Users\USERNAME\AppData\Local\Programs\Python\Python38-32\Lib\site-packages` to this new folder
 - archive all of the packages and the `lambda_functions.py` file into a **zip** file
 
 ![](/folder.png)
