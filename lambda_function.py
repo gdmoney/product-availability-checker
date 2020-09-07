@@ -52,6 +52,7 @@ def check_status():
             return True
     return False
 
+# email if keywords are found in the text file
 def lambda_handler(event, context):
 	with open('titan.txt') as f:
     	if 'In Stock' in f.read():
@@ -61,5 +62,5 @@ def lambda_handler(event, context):
     	elif 'Select Styles for Availability' in f.read():
     		send_email()
 
-	# delete the file
+	# delete the text file
 	os.remove('/tmp/titan.txt')
