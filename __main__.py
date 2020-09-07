@@ -57,5 +57,5 @@ with open('titan.txt') as f:
     elif 'Select Styles for Availability' in f.read():
         send_email()
 
-# delete the file
+# delete the text file
 os.remove('titan.txt')
