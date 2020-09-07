@@ -17,7 +17,9 @@ BASE_URL = [
 'https://www.titan.fitness/strength/weight-plates/cast-iron-plates/cast-iron-olympic-weight-plates-%7C-245-lb-set/430230.html',
 'https://www.titan.fitness/strength/dumbbells/rubber-coated-hex/pair-of-75-lb-black-rubber-coated-hex-dumbbells/421076.html',
 'https://www.titan.fitness/strength/dumbbells/rubber-coated-hex/pair-of-100-lb-black-rubber-coated-hex-dumbbells/421101.html',
-'https://www.titan.fitness/racks/bench-press-rack-with-flip-down-safeties/400597.html'
+'https://www.titan.fitness/racks/bench-press-rack-with-flip-down-safeties/400597.html',
+'https://www.titan.fitness/strength/barbells/olympic/atlas-bar---mens-20kg-barbell/430090.html',
+'https://www.titan.fitness/racks/power-racks/t-3-series/t-3-series-short-space-saving-racks/SSRT3SHUP-SSRT3.html'
 ]
 
 # loop through the URLs above
@@ -46,10 +48,13 @@ def send_email():
 	yag = yagmail.SMTP(FROM, 'hkxzacjexgundssc')
 	yag.send(TO, subject, contents)
 
+# email if keywords are found
 with open('titan.txt') as f:
     if 'In Stock' in f.read():
     	send_email()
     elif 'Backorder' in f.read():
+    	send_email()
+    elif 'Select Styles for Availability' in f.read():
     	send_email()
 
 # delete the file
