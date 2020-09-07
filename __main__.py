@@ -34,7 +34,7 @@ for page in BASE_URL:
 	status = "Product Name: " + product_name + '\n' + "Availability: " + availability
 
 	# create a text file
-	with open ('titan.txt', "a") as f:
+	with open('titan.txt', 'a') as f:
 		f.write(status + '\n' + '\n')
 
 def send_email():
@@ -46,9 +46,16 @@ def send_email():
 	yag.send(TO, subject, contents)
 
 # email if one of the  products is available
-if 'In Stock' or 'Backorder' in f.read():
+def check_status():
+    with open('titan.txt') as f:
+        textfile = f.readlines()
+    for line in textfile:
+        if 'In Stock' in line:
+            return True
+    return False
+
+if check_status():
     send_email()
-f.close()
 
 # delete the file
 os.remove('titan.txt')
