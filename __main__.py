@@ -24,29 +24,29 @@ BASE_URL = [
 
 # loop through the URLs above
 for page in BASE_URL:
-	# query each website and return html, parse the html using Beautiful Soup and store in variable 'soup'
-	soup = BeautifulSoup(requests.get(page).content, 'html.parser')
+    # query each website and return html, parse the html using Beautiful Soup and store in variable 'soup'
+    soup = BeautifulSoup(requests.get(page).content, 'html.parser')
 
-	# take out the <div> of name and get its value
-	product_name_box = soup.find('span', attrs={'class': 'h1 product-name'})
-	product_name = (product_name_box.text.strip())
+    # take out the <div> of name and get its value
+    product_name_box = soup.find('span', attrs={'class': 'h1 product-name'})
+    product_name = (product_name_box.text.strip())
 
-	availability_box = soup.find('span', attrs={'class': 'availability-msg'})
-	availability = (availability_box.text.strip())
+    availability_box = soup.find('span', attrs={'class': 'availability-msg'})
+    availability = (availability_box.text.strip())
 
-	status = "Product Name: " + product_name + '\n' + "Availability: " + availability
+    status = "Product Name: " + product_name + '\n' + "Availability: " + availability
 
-	# create a text file
-	with open('titan.txt', 'a') as f:
-		f.write(status + '\n' + '\n')
+    # create a text file
+    with open('titan.txt', 'a') as f:
+	f.write(status + '\n' + '\n')
 
 def send_email():
-	FROM = 'george.davitiani@gmail.com'
-	TO = 'george.davitiani@gmail.com'
-	subject = 'Titan Fitness'
-	contents = 'titan.txt'
-	yag = yagmail.SMTP(FROM, 'hkxzacjexgundssc')
-	yag.send(TO, subject, contents)
+    FROM = 'george.davitiani@gmail.com'
+    TO = 'george.davitiani@gmail.com'
+    subject = 'Titan Fitness'
+    contents = 'titan.txt'
+    yag = yagmail.SMTP(FROM, 'hkxzacjexgundssc')
+    yag.send(TO, subject, contents)
 
 # email if keywords are found in the text file
 with open('titan.txt') as f:
