@@ -45,7 +45,7 @@ def send_email():
 	yag.send(TO, subject, contents)
 
 def check_status():
-    with open('titan.txt') as f:
+    with open('/tmp/titan.txt') as f:
         textfile = f.readlines()
     for line in textfile:
         if 'In Stock' in line:
@@ -54,7 +54,7 @@ def check_status():
 
 # email if keywords are found in the text file
 def lambda_handler(event, context):
-	with open('titan.txt') as f:
+	with open('/tmp/titan.txt') as f:
     	if 'In Stock' in f.read():
     		send_email()
     	elif 'Backorder' in f.read():
