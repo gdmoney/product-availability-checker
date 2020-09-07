@@ -61,5 +61,5 @@ def lambda_handler(event, context):
     	elif 'Select Styles for Availability' in f.read():
     		send_email()
 
-# delete the file
-os.remove('/tmp/titan.txt')
+	# delete the file
+	os.remove('/tmp/titan.txt')
