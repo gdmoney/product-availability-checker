@@ -45,15 +45,16 @@ def send_email():
 	yag = yagmail.SMTP(FROM, 'hkxzacjexgundssc')
 	yag.send(TO, subject, contents)
 
-# email if one of the  products is available
+# search the text file keywords
 def check_status():
     with open('titan.txt') as f:
         textfile = f.readlines()
     for line in textfile:
-        if 'In Stock' in line:
+        if 'In Stock' or 'Backorder' in line:
             return True
     return False
 
+# email if the above function returns True
 if check_status():
     send_email()
 
