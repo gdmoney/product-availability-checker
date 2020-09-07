@@ -57,7 +57,6 @@ def check_status():
 # email if the above function returns True
 if check_status():
     send_email()
-f.close()
 
 # delete the file
 os.remove('titan.txt')
