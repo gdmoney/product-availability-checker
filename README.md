@@ -44,4 +44,4 @@ Insturctions for running code in AWS:
 
 
 ## Issues
- - sometimes sends email even when all of the products are out of stock - **FIXED**
+ - sends email even when all of the products are out of stock - **FIXED**
