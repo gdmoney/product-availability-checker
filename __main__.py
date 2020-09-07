@@ -45,7 +45,7 @@ def send_email():
 	yag = yagmail.SMTP(FROM, 'hkxzacjexgundssc')
 	yag.send(TO, subject, contents)
 
-# search the text file keywords
+# search the text file for keywords
 def check_status():
     with open('titan.txt') as f:
         textfile = f.readlines()
