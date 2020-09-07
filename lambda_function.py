@@ -34,7 +34,7 @@ for page in BASE_URL:
 
     # create a text file
     with open ('/tmp/titan.txt', "a") as f:
-	f.write(status + '\n' + '\n')
+        f.write(status + '\n' + '\n')
 
 def send_email():
     FROM = 'george.davitiani@gmail.com'
@@ -55,12 +55,12 @@ def check_status():
 # email if keywords are found in the text file
 def lambda_handler(event, context):
     with open('/tmp/titan.txt') as f:
-    	if 'In Stock' in f.read():
-    	    send_email()
-    	elif 'Backorder' in f.read():
-    	    send_email()
-    	elif 'Select Styles for Availability' in f.read():
-    	    send_email()
+        if 'In Stock' in f.read():
+            send_email()
+        elif 'Backorder' in f.read():
+            send_email()
+        elif 'Select Styles for Availability' in f.read():
+            send_email()
 
     # delete the text file
     os.remove('/tmp/titan.txt')

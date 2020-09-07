@@ -38,7 +38,7 @@ for page in BASE_URL:
 
     # create a text file
     with open('titan.txt', 'a') as f:
-	f.write(status + '\n' + '\n')
+        f.write(status + '\n' + '\n')
 
 def send_email():
     FROM = 'george.davitiani@gmail.com'
@@ -51,11 +51,11 @@ def send_email():
 # email if keywords are found in the text file
 with open('titan.txt') as f:
     if 'In Stock' in f.read():
-    	send_email()
+        send_email()
     elif 'Backorder' in f.read():
-    	send_email()
+        send_email()
     elif 'Select Styles for Availability' in f.read():
-    	send_email()
+        send_email()
 
 # delete the file
 os.remove('titan.txt')
