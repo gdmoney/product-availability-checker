@@ -40,7 +40,8 @@ Insturctions for running code in AWS:
 - automate to run daily - **DONE** - using Windows Task Scheduler when running locally or EventBridge when running in AWS
 - email only if status =/= Out of Stock - **DONE**
 - email only the products that are available
+- link GitHub and AWS Lambda
 
 
 ## Issues
- - sometimes sends email even when all of the products are out of stock
+ - sometimes sends email even when all of the products are out of stock - **FIXED**
