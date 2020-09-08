@@ -45,7 +45,7 @@ def send_email():
     yag.send(TO, subject, contents)
 
 # email if keywords are found in the text file
-def lambda_handler(event, context):
+def hello_pubsub(event, context):
     with open('/tmp/titan.txt') as f:
         if 'In Stock' in f.read():
             send_email()
