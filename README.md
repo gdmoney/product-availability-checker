@@ -41,6 +41,7 @@ Insturctions for running code in AWS:
 - email only if status =/= Out of Stock - **DONE**
 - email only the products that are available
 - link GitHub and AWS Lambda
+- run it on GCP
 
 
 ## Issues
