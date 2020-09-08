@@ -30,10 +30,10 @@ for page in BASE_URL:
     availability_box = soup.find('span', attrs={'class': 'availability-msg'})
     availability = (availability_box.text.strip())
 
-    status = "Product Name: " + product_name + '\n' + "Availability: " + availability
+    status = 'Product Name: ' + product_name + '\n' + 'Availability: ' + availability
 
     # create a text file
-    with open ('/tmp/titan.txt', "a") as f:
+    with open ('/tmp/titan.txt', 'a') as f:
         f.write(status + '\n' + '\n')
 
 def send_email():
