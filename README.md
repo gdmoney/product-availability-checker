@@ -43,6 +43,7 @@ Insturctions for running code in AWS:
 - link GitHub and AWS Lambda
 - run it on GCP
 - add price
+- run it with GitHub Actions - **DONE**
 
 
 ## Issues
