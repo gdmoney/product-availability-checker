@@ -17,15 +17,15 @@ Can be run locally with `__main.py__`, on **GitHub Actions**, or on **AWS Lambda
 Insturctions for running code in AWS:
 
 - download the `python.zip` file from `AWS-Lambda`
-- Create a function
-  - [AWS](https://console.aws.amazon.com) > Lambda > Create function
-  - Author from scratch > name > Runtime: Python 3.8 > Permissions: Create a new role with basic Lambda permissions
-  - Actions > upload a .zip file: `python.zip` > Save
+#### Create a function
+- [AWS](https://console.aws.amazon.com) > Lambda > Create function
+- Author from scratch > name > Runtime: Python 3.8 > Permissions: Create a new role with basic Lambda permissions
+- Actions > upload a .zip file: `python.zip` > Save
+#### Test
+- Test > Create new test event > Event template: hello-world > Event name > Create
 - Test
-  - Test > Create new test event > Event template: hello-world > Event name > Create
-  - Test
-- Automate
-  - Designer > Add trigger > EventBridge > Rule: Create a new rule > Rule name > Rule type: Schedule expression > Schedule expression: `cron(0 13 * * ? *)` > Add
+#### Automate
+- Designer > Add trigger > EventBridge > Rule: Create a new rule > Rule name > Rule type: Schedule expression > Schedule expression: `cron(0 13 * * ? *)` > Add
 
 ![](/aws.png)
 
