@@ -44,6 +44,7 @@ Insturctions for running code in AWS:
 - run it on GCP
 - add price
 - run it with GitHub Actions - **DONE**
+- add a link in the text file
 
 
 ## Issues
