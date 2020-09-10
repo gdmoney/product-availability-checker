@@ -3,7 +3,7 @@
 ## Description
 Queries each website, checks product availability, and send an email if one of the products is available.  
 
-Can be run locally with `__main.py__` or on **AWS Lambda** with `lambda_function.py`.
+Can be run locally with `__main.py__`, on **GitHub Actions** or on **AWS Lambda** with `lambda_function.py`.
 
 
 ## Components
