@@ -46,9 +46,9 @@ Insturctions for running code in AWS:
 - email only the products that are available
 - link GitHub and AWS Lambda
 - run it on GCP
-- add price
+- add price - **DONE**
 - run it with GitHub Actions - **DONE**
-- add a link in the text file
+- add URL links in the text file
 
 
 ## Issues
