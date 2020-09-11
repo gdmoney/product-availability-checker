@@ -18,7 +18,7 @@ Insturctions for running code in AWS:
 
 - download the `python.zip` file from `AWS-Lambda`
 #### Create a function
-- [AWS](https://console.aws.amazon.com) > Lambda > Create function
+- **[AWS]**(https://console.aws.amazon.com) > Lambda > Create function
 - Author from scratch > name > Runtime: Python 3.8 > Permissions: Create a new role with basic Lambda permissions
 - Actions > upload a .zip file: `python.zip` > Save
 #### Test
