@@ -27,10 +27,13 @@ for page in BASE_URL:
     product_name_box = soup.find('span', attrs={'class': 'h1 product-name'})
     product_name = (product_name_box.text.strip())
 
+    price_box = soup.find('span', attrs={'class': 'sales'})
+    price = (price_box.text.strip())
+
     availability_box = soup.find('span', attrs={'class': 'availability-msg'})
     availability = (availability_box.text.strip())
 
-    status = 'Product Name: ' + product_name + '\n' + 'Availability: ' + availability
+    status = 'Product Name: ' + product_name + '\n' + 'Price:        ' + price + '\n' + 'Availability: ' + availability
 
     # create a text file
     with open ('/tmp/titan.txt', 'a') as f:
