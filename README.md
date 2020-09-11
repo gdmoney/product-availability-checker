@@ -1,5 +1,6 @@
 # Product Availability Checker
 
+
 ## Description
 Queries each website, checks product availability, and send an email if one of the products is available.  
 
