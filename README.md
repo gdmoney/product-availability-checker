@@ -70,7 +70,7 @@ Can be run locally, on **GitHub Actions**, on **AWS Lambda**, or on **GCP Cloud 
 
 
 ## Things to add
-- automate to run daily - **DONE** - using Windows Task Scheduler, AWS EventBridge, or GCP ???
+- automate to run daily - **DONE** - using Windows Task Scheduler, AWS EventBridge, or GCP Cloud Scheduler
 - email only if status =/= Out of Stock - **DONE**
 - email only the products that are available
 - run it on AWS Lambda - **DONE**
