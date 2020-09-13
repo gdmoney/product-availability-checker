@@ -63,8 +63,9 @@ Can be run locally, on **GitHub Actions**, on **AWS Lambda**, or on **GCP Functi
 - automate to run daily - **DONE** - using Windows Task Scheduler, AWS EventBridge, or GCP ???
 - email only if status =/= Out of Stock - **DONE**
 - email only the products that are available
+- run it on AWS Lambda - **DONE**
 - link GitHub and AWS Lambda
-- run it on GCP - **DONE**
+- run it on GCP Functions - **DONE**
 - add price - **DONE**
 - run it with GitHub Actions - **DONE**
 - add URL links in the text file
