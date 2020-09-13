@@ -38,7 +38,7 @@ Can be run locally, on **GitHub Actions**, on **AWS Lambda**, or on **GCP Cloud 
 
 ### Insturctions for **GCP**
 
-- download the `python-gcp.zip` file from [GDP](/GCP)
+- download the `python-gcp.zip` file from [GCP](/GCP)
 #### Create a function
 - **[GCP](https://console.cloud.google.com)** > Cloud Functions > Create Function > Function name ... > Region ... > Trigger type:  Cloud Pub/Sub > Create a topic ... > Create Topic
 - Save > Next
