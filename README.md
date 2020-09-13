@@ -65,7 +65,7 @@ Can be run locally, on **GitHub Actions**, on **AWS Lambda**, or on **GCP Functi
 - email only if status =/= Out of Stock - **DONE**
 - email only the products that are available
 - link GitHub and AWS Lambda
-- run it on GCP
+- run it on GCP - **DONE**
 - add price - **DONE**
 - run it with GitHub Actions - **DONE**
 - add URL links in the text file
