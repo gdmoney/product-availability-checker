@@ -25,7 +25,7 @@ Can be run locally, on **GitHub Actions**, on **AWS Lambda**, or on **GCP Cloud 
 - download the `python-aws.zip` file from [AWS](/AWS)
 #### Create a function
 - **[AWS](https://console.aws.amazon.com)** > Lambda > Create function
-- Author from scratch > name > Runtime: Python 3.8 > Permissions: Create a new role with basic Lambda permissions
+- Author from scratch > Function name ... > Runtime: Python 3.8 > Permissions: Create a new role with basic Lambda permissions
 - Actions > upload a .zip file: `python-aws.zip` > Save
 #### Test
 - Test > Create new test event > Event template: hello-world > Event name > Create
