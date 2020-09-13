@@ -31,7 +31,7 @@ Can be run locally, on **GitHub Actions**, on **AWS Lambda**, or on **GCP Cloud 
 - Test > Create new test event > Event template: hello-world > Event name > Create
 - Test
 #### Automate
-- Designer > Add trigger > EventBridge > Rule: Create a new rule > Rule name > Rule type: Schedule expression > Schedule expression: `cron(0 13 * * ? *)` > Add  
+- Designer > Add trigger > EventBridge > Rule: Create a new rule > Rule name ... > Rule type: Schedule expression > Schedule expression: `cron(0 13 * * ? *)` > Add  
 
 ![](AWS/aws.png)
 
