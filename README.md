@@ -23,7 +23,7 @@ Can be run locally, on **GitHub Actions**, on **AWS Lambda**, or on **GCP Functi
 #### Create a function
 - **[AWS](https://console.aws.amazon.com)** > Lambda > Create function
 - Author from scratch > name > Runtime: Python 3.8 > Permissions: Create a new role with basic Lambda permissions
-- Actions > upload a .zip file: `python.zip` > Save
+- Actions > upload a .zip file: `python-aws.zip` > Save
 #### Test
 - Test > Create new test event > Event template: hello-world > Event name > Create
 - Test
@@ -38,7 +38,7 @@ Can be run locally, on **GitHub Actions**, on **AWS Lambda**, or on **GCP Functi
 #### Create a function
 - **[GCP](https://console.cloud.google.com)** > Cloud Functions > Create Function > Function name ... > Region ... > Trigger type:  Cloud Pub/Sub > Create a topic ... > Create Topic
 - Save > Next
-- Runtime > Python 3.8 > Source code > ZIP from Cloud Storage > Browse: python-gcp.zip > Deploy
+- Runtime > Python 3.8 > Source code > ZIP from Cloud Storage > Browse: `python-gcp.zip` > Deploy
 #### Test
 - Actions > Test function
 #### Automate
@@ -60,7 +60,7 @@ Can be run locally, on **GitHub Actions**, on **AWS Lambda**, or on **GCP Functi
 
 
 ## Things to add
-- automate to run daily - **DONE** - using Windows Task Scheduler when running locally or EventBridge when running in AWS
+- automate to run daily - **DONE** - using Windows Task Scheduler, AWS EventBridge, or GCP ???
 - email only if status =/= Out of Stock - **DONE**
 - email only the products that are available
 - link GitHub and AWS Lambda
