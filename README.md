@@ -4,16 +4,18 @@
 ## Description
 Queries each website, checks product availability, and send an email if one of the products is available.  
 
-Can be run locally, on **GitHub Actions**, on **AWS Lambda**, or on **GCP Functions**.
+Can be run locally, on **GitHub Actions**, on **AWS Lambda**, or on **GCP Cloud Functions**.
 
 
 ## Components
 - Python 3.8
 - various Python libraries: Beautiful Soup, Requests, YagMail, etc.
-- AWS Lambda
-- AWS EventBridge (CloudWatch Events)
-- GCP Functions
-- GCP Pub/Sub
+- AWS
+	- Lambda
+	- EventBridge (CloudWatch Events)
+- GCP
+	- Cloud Functions
+	- Pub/Sub
 
 
 ## Usage
