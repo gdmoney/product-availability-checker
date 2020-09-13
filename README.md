@@ -25,13 +25,13 @@ Can be run locally, on **GitHub Actions**, on **AWS Lambda**, or on **GCP Cloud 
 - download the `python-aws.zip` file from [AWS](/AWS)
 #### Create a function
 - **[AWS](https://console.aws.amazon.com)** > Lambda > Create function
-- Author from scratch > name > Runtime: Python 3.8 > Permissions: Create a new role with basic Lambda permissions
+- Author from scratch > Function name ... > Runtime: Python 3.8 > Permissions: Create a new role with basic Lambda permissions
 - Actions > upload a .zip file: `python-aws.zip` > Save
 #### Test
-- Test > Create new test event > Event template: hello-world > Event name > Create
+- Test > Create new test event > Event template: hello-world > Event name ... > Create
 - Test
 #### Automate
-- Designer > Add trigger > EventBridge > Rule: Create a new rule > Rule name > Rule type: Schedule expression > Schedule expression: `cron(0 13 * * ? *)` > Add  
+- Designer > Add trigger > EventBridge > Rule: Create a new rule > Rule name ... > Rule type: Schedule expression > Schedule expression: `cron(0 13 * * ? *)` > Add  
 
 ![](AWS/aws.png)
 
@@ -79,7 +79,7 @@ Can be run locally, on **GitHub Actions**, on **AWS Lambda**, or on **GCP Cloud 
 - add price - **DONE**
 - run it with GitHub Actions - **DONE**
 - add URL links in the text file
-- use AWS SNS or SES to send email instead of YagMail
+- use AWS SNS, SQS, or SES to send email instead of YagMail
 
 
 ## Issues
