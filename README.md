@@ -17,7 +17,7 @@ Can be run locally, on **GitHub Actions**, on **AWS Lambda**, or on **GCP Functi
 
 
 ## Usage
-### Insturctions for **AWS**:
+### Insturctions for **AWS**
 
 - download the `python-aws.zip` file from `AWS`
 #### Create a function
@@ -33,7 +33,7 @@ Can be run locally, on **GitHub Actions**, on **AWS Lambda**, or on **GCP Functi
 ![](AWS/aws.png)
 
 
-### Insturctions for **GCP**:
+### Insturctions for **GCP**
 
 - download the `python-gcp.zip` file from `GCP`
 #### Create a function
@@ -55,7 +55,7 @@ Can be run locally, on **GitHub Actions**, on **AWS Lambda**, or on **GCP Functi
 - archive all of the packages and the `lambda_functions.py` file into a **zip** file
 ![](AWS/aws-folder.png)
 #### GCP
-- put the `main.py` and `requirements.txt` files there
+- put the `main.py` and the `requirements.txt` files there
 - archive all of the packages, the `main.py` and the `requirements.txt` files into a **zip** file
 ![](GCP/gcp-folder.png)
 
