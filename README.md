@@ -16,6 +16,7 @@ Can be run locally, on **GitHub Actions**, on **AWS Lambda**, or on **GCP Cloud 
 - GCP
 	- Cloud Functions
 	- Pub/Sub
+	- Cloud Scheduler
 
 
 ## Usage
@@ -45,7 +46,7 @@ Can be run locally, on **GitHub Actions**, on **AWS Lambda**, or on **GCP Cloud 
 #### Test
 - Actions > Test function
 #### Automate
-- 
+- Cloud Scheduler > Create Job > Name ... > Frequency: `0 7 * * *` > Timezone ... > Target: Pub/Sub > Topic ... > Payload ... > Create
 
 ![](GCP/gcp.png)
 
