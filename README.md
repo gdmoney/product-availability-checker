@@ -30,6 +30,7 @@ Can be run locally, on **GitHub Actions**, on **AWS Lambda**, or on **GCP Functi
 #### Automate
 - Designer > Add trigger > EventBridge > Rule: Create a new rule > Rule name > Rule type: Schedule expression > Schedule expression: `cron(0 13 * * ? *)` > Add
 &nbsp;
+&nbsp;
 ![](AWS/aws.png)
 
 
