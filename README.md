@@ -29,6 +29,7 @@ Can be run locally, on **GitHub Actions**, on **AWS Lambda**, or on **GCP Functi
 - Test
 #### Automate
 - Designer > Add trigger > EventBridge > Rule: Create a new rule > Rule name > Rule type: Schedule expression > Schedule expression: `cron(0 13 * * ? *)` > Add
+&nbsp;
 ![](AWS/aws.png)
 
 
@@ -43,6 +44,7 @@ Can be run locally, on **GitHub Actions**, on **AWS Lambda**, or on **GCP Functi
 - Actions > Test function
 #### Automate
 - 
+
 ![](GCP/gcp.png)
 
 
@@ -52,10 +54,13 @@ Can be run locally, on **GitHub Actions**, on **AWS Lambda**, or on **GCP Functi
 #### AWS
 - put the `lambda_function.py` file there
 - archive all of the packages and the `lambda_functions.py` file into a **zip** file
+
 ![](AWS/aws-folder.png)
 #### GCP
+
 - put the `main.py` and the `requirements.txt` files there
 - archive all of the packages, the `main.py` and the `requirements.txt` files into a **zip** file
+
 ![](GCP/gcp-folder.png)
 
 
