@@ -48,10 +48,11 @@ def send_email():
     yag.send(TO, subject, contents)
 
 # email if keywords are found in the text file
-with open('/tmp/titan.txt') as f:
-    if 'In Stock' in f.read():
-        send_email()
-    elif 'Backorder' in f.read():
-        send_email()
-    elif 'Select Styles for Availability' in f.read():
-        send_email()
+def lambda_handler(event, context):
+    with open('/tmp/titan.txt') as f:
+        if 'In Stock' in f.read():
+            send_email()
+        elif 'Backorder' in f.read():
+            send_email()
+        elif 'Select Styles for Availability' in f.read():
+            send_email()
