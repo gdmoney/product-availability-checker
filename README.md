@@ -28,7 +28,7 @@ Can be run locally, on **GitHub Actions**, on **AWS Lambda**, or on **GCP Cloud 
 - Author from scratch > Function name ... > Runtime: Python 3.8 > Permissions: Create a new role with basic Lambda permissions
 - Actions > upload a .zip file: `python-aws.zip` > Save
 #### Test
-- Test > Create new test event > Event template: hello-world > Event name > Create
+- Test > Create new test event > Event template: hello-world > Event name ... > Create
 - Test
 #### Automate
 - Designer > Add trigger > EventBridge > Rule: Create a new rule > Rule name ... > Rule type: Schedule expression > Schedule expression: `cron(0 13 * * ? *)` > Add  
