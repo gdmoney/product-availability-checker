@@ -51,12 +51,14 @@ Can be run locally, on **GitHub Actions**, on **AWS Lambda**, or on **GCP Functi
 ## Build
 - create a new folder
 - copy all the required Python packages from `C:\Users\USERNAME\AppData\Local\Programs\Python\Python38-32\Lib\site-packages` to this new folder
-#### AWS
+
+### AWS
 - put the `lambda_function.py` file there
 - archive all of the packages and the `lambda_functions.py` file into a **zip** file
 
 ![](AWS/aws-folder.png)
-#### GCP
+
+### GCP
 
 - put the `main.py` and the `requirements.txt` files there
 - archive all of the packages, the `main.py` and the `requirements.txt` files into a **zip** file
