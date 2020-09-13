@@ -9,7 +9,7 @@ Can be run locally, on **GitHub Actions**, on **AWS Lambda**, or on **GCP Cloud 
 
 ## Components
 - Python 3.8
-- various Python libraries: Beautiful Soup, Requests, YagMail, etc.
+	- various libraries: Beautiful Soup, Requests, YagMail, etc.
 - AWS
 	- Lambda
 	- EventBridge (CloudWatch Events)
