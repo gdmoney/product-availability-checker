@@ -19,7 +19,7 @@ Can be run locally, on **GitHub Actions**, on **AWS Lambda**, or on **GCP Functi
 ## Usage
 Insturctions for **AWS**:
 
-- download the `python-aws.zip` file from `AWS-Lambda`
+- download the `python-aws.zip` file from `AWS`
 #### Create a function
 - **[AWS](https://console.aws.amazon.com)** > Lambda > Create function
 - Author from scratch > name > Runtime: Python 3.8 > Permissions: Create a new role with basic Lambda permissions
@@ -53,11 +53,11 @@ Insturctions for **GCP**:
 #### AWS
 - put the `lambda_function.py` file there
 - archive all of the packages and the `lambda_functions.py` file into a **zip** file
-![](/aws-folder.png)
+![](AWS/aws-folder.png)
 #### GCP
 - put the `main.py` and `requirements.txt` files there
 - archive all of the packages, the `main.py` and the `requirements.txt` files into a **zip** file
-![](/gcp-folder.png)
+![](GCP/gcp-folder.png)
 
 
 ## Things to add
