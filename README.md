@@ -17,7 +17,7 @@ Can be run locally, on **GitHub Actions**, on **AWS Lambda**, or on **GCP Functi
 
 
 ## Usage
-Insturctions for **AWS**:
+### Insturctions for **AWS**:
 
 - download the `python-aws.zip` file from `AWS`
 #### Create a function
@@ -33,7 +33,7 @@ Insturctions for **AWS**:
 ![](AWS/aws.png)
 
 
-Insturctions for **GCP**:
+### Insturctions for **GCP**:
 
 - download the `python-gcp.zip` file from `GCP`
 #### Create a function
