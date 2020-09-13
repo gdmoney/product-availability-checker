@@ -30,7 +30,7 @@ Insturctions for **AWS**:
 #### Automate
 - Designer > Add trigger > EventBridge > Rule: Create a new rule > Rule name > Rule type: Schedule expression > Schedule expression: `cron(0 13 * * ? *)` > Add
 
-![](aws/aws.png)
+![](AWS/aws.png)
 
 
 Insturctions for **GCP**:
@@ -45,7 +45,7 @@ Insturctions for **GCP**:
 #### Automate
 - 
 
-![](gcp/gcp.png)
+![](GCP/gcp.png)
 
 ## Build
 - create a new folder
