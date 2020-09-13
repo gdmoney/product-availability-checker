@@ -79,7 +79,7 @@ Can be run locally, on **GitHub Actions**, on **AWS Lambda**, or on **GCP Cloud 
 - add price - **DONE**
 - run it with GitHub Actions - **DONE**
 - add URL links in the text file
-- use AWS SNS to send email instead of YagMail
+- use AWS SNS or SES to send email instead of YagMail
 
 
 ## Issues
