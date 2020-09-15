@@ -8,19 +8,19 @@ Can be run locally, on **GitHub Actions**, on **AWS Lambda**, or on **GCP Cloud 
 
 
 ## Components
-- Python 3.8
-	- various libraries: Beautiful Soup, Requests, YagMail, etc.
-- AWS
-	- Lambda
-	- EventBridge (CloudWatch Events)
-- GCP
-	- Cloud Functions
-	- Pub/Sub
-	- Cloud Scheduler
+- **Python 3.8**
+  - various libraries: Beautiful Soup, Requests, YagMail, etc.
+- **AWS**
+  - Lambda
+  - EventBridge (CloudWatch Events)
+- **GCP**
+  - Cloud Functions
+  - Pub/Sub
+  - Cloud Scheduler
 
 
 ## Usage
-### Insturctions for **AWS**
+### AWS Instructions
 
 - download the `python-aws.zip` file from [AWS](/AWS)
 #### Create a function
@@ -36,7 +36,7 @@ Can be run locally, on **GitHub Actions**, on **AWS Lambda**, or on **GCP Cloud 
 ![](AWS/aws.png)
 
 
-### Insturctions for **GCP**
+### GCP Instructions
 
 - download the `python-gcp.zip` file from [GCP](/GCP)
 #### Create a function
