@@ -1,7 +1,7 @@
 # Product Availability Checker
 
 
-## Description
+## Project Overview
 Queries each website, checks product availability, and send an email if one of the products is available.  
 
 Can be run locally, on **GitHub Actions**, on **AWS Lambda**, or on **GCP Cloud Functions**.
