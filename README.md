@@ -80,7 +80,9 @@ Can be run locally, on **GitHub Actions**, on **AWS Lambda**, or on **GCP Cloud 
 - run it with GitHub Actions - **DONE**
 - add URL links in the text file
 - use AWS SNS, SQS, or SES to send email instead of YagMail
+- containerize it
 
 
 ## Issues
- - sends email even when all of the products are out of stock - **FIXED**
+- sends email even when all of the products are out of stock - **FIXED**
+- only GCP email came, not AWS, GitHub, or when run locally (09.15.2020)
