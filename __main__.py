@@ -1,7 +1,9 @@
+# pip install beautifulsoup4
+# pip install keyring
 # pip install requests
 # pip install yagmail
-# pip install beautifulsoup4
 
+import keyring
 import os
 import requests
 import yagmail
@@ -47,7 +49,7 @@ def send_email():
     TO = 'george.davitiani@gmail.com'
     subject = 'Titan Fitness'
     contents = 'titan.txt'
-    yag = yagmail.SMTP(FROM, 'akagxcuvwwpszfhq')
+    yag = yagmail.SMTP(FROM)
     yag.send(TO, subject, contents)
 
 # email if keywords are found in the text file
