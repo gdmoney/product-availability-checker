@@ -47,7 +47,7 @@ def send_email():
     TO = 'george.davitiani@gmail.com'
     subject = 'Titan Fitness'
     contents = 'titan.txt'
-    yag = yagmail.SMTP(FROM, 'hkxzacjexgundssc')
+    yag = yagmail.SMTP(FROM, 'akagxcuvwwpszfhq')
     yag.send(TO, subject, contents)
 
 # email if keywords are found in the text file
