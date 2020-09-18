@@ -79,13 +79,16 @@ Can be run locally, on **GitHub Actions**, on **AWS Lambda**, or on **GCP Cloud 
 - add price - **DONE**
 - run it with GitHub Actions - **DONE**
 - add URL links in the text file
-- use AWS SNS, SQS, or SES to send email instead of YagMail
+- use AWS SNS, SQS, or SES to send email instead of YagMail - **DONE** - using SES
 - containerize it
+- run new code in Lambda
+- run new code in GCP
+- run new code in GitHub Actions
 
 
 ## Issues
 - sends email even when all of the products are out of stock - **FIXED**
 - only GCP email came, not AWS, GitHub, or when run locally (09.15.2020) - **FIXED** - one of the URLs became broken
-- not sending email, code is running successfully, I think it's something with Gmail or Yagmail
+- not sending email, code is running successfully, I think it's something with Gmail or Yagmail - **FIXED** - using AWS SES
   - tried: keyring, oauth, different gmail acct - no bueno
   - try EZGmail instead of Yagmail
