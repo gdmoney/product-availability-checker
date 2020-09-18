@@ -84,6 +84,8 @@ Can be run locally, on **GitHub Actions**, on **AWS Lambda**, or on **GCP Cloud 
 - run new code in Lambda
 - run new code in GCP
 - run new code in GitHub Actions
+- update documentation;
+
 
 
 ## Issues
