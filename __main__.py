@@ -3,7 +3,6 @@
 # pip install requests
 # pip install yagmail
 
-import keyring
 import os
 import requests
 import yagmail
@@ -49,7 +48,7 @@ def send_email():
     TO = 'george.davitiani@gmail.com'
     subject = 'Titan Fitness'
     contents = 'titan.txt'
-    yag = yagmail.SMTP(FROM)
+    yag = yagmail.SMTP(FROM, oauth2_file='~/oauth2_creds.json')
     yag.send(TO, subject, contents)
 
 # email if keywords are found in the text file
