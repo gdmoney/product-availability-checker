@@ -1,7 +1,6 @@
 # pip install boto3
 # pip install beautifulsoup4
 # pip install requests
-# pip install yagmail
 
 import boto3
 import email.utils
