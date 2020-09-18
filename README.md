@@ -21,7 +21,6 @@ Can be run locally, on **GitHub Actions**, on **AWS Lambda**, or on **GCP Cloud 
 
 ## Usage
 ### AWS Instructions
-
 - download the `python-aws.zip` file from [AWS](/AWS)
 #### Create a function
 - **[AWS](https://console.aws.amazon.com)** > Lambda > Create function
@@ -37,7 +36,6 @@ Can be run locally, on **GitHub Actions**, on **AWS Lambda**, or on **GCP Cloud 
 
 
 ### GCP Instructions
-
 - download the `python-gcp.zip` file from [GCP](/GCP)
 #### Create a function
 - **[GCP](https://console.cloud.google.com)** > Cloud Functions > Create Function > Function name ... > Region ... > Trigger type:  Cloud Pub/Sub > Create a topic ... > Create Topic
@@ -62,7 +60,6 @@ Can be run locally, on **GitHub Actions**, on **AWS Lambda**, or on **GCP Cloud 
 ![](AWS/aws-folder.png)
 
 ### GCP
-
 - put the `main.py` and the `requirements.txt` files there
 - archive all of the packages, the `main.py` and the `requirements.txt` files into a **zip** file
 
@@ -82,10 +79,9 @@ Can be run locally, on **GitHub Actions**, on **AWS Lambda**, or on **GCP Cloud 
 - use AWS SNS, SQS, or SES to send email instead of YagMail - **DONE** - using SES
 - containerize it
 - run new code in Lambda
-- run new code in GCP
-- run new code in GitHub Actions
-- update documentation;
-
+- run new code in GCP (would need to provide AWS access key ID and secret access key)
+- run new code in GitHub Actions (would need to provide AWS access key ID and secret access key)
+- update documentation
 
 
 ## Issues
