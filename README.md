@@ -26,7 +26,7 @@ Can be run locally, on **AWS Lambda**, on **GCP Cloud Functions**, or on **GitHu
 #### Create a function
 - **[AWS](https://console.aws.amazon.com)** > Lambda > Create function
 - Author from scratch > Function name ... > Runtime: Python 3.8 > Permissions: Create a new role with basic Lambda permissions *
-  - * also attach SES acces policy to the role
+  * also attach SES acces policy to the role
 - Actions > upload a .zip file: `python-aws.zip` > Save
 #### Test
 - Test > Create new test event > Event template: hello-world > Event name ... > Create
