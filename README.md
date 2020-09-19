@@ -27,7 +27,7 @@ Can be run locally, on **AWS Lambda**, on **GCP Cloud Functions**, or on **GitHu
 #### Create a function
 - **[AWS](https://console.aws.amazon.com)** > Lambda > Create function
 - Author from scratch > Function name ... > Runtime: Python 3.8 > Permissions: Create a new role with basic Lambda permissions *
-  * also attach SES acces policy to the role
+  * in IAM, attach SES access policy to the Role listed under Permissions
 - Actions > upload a .zip file: `python-aws.zip` > Save
 #### Test
 - Test > Create new test event > Event template: hello-world > Event name ... > Create
@@ -43,11 +43,14 @@ Can be run locally, on **AWS Lambda**, on **GCP Cloud Functions**, or on **GitHu
 #### Create a function
 - **[GCP](https://console.cloud.google.com)** > Cloud Functions > Create Function > Function name ... > Region ... > Trigger type:  Cloud Pub/Sub > Create a topic ... > Create Topic
 - Save > Next
-- Runtime > Python 3.8 > Source code > ZIP from Cloud Storage > Browse: `python-gcp.zip` > Deploy
+- Runtime > Python 3.8 > Source code > ZIP from Cloud Storage > Browse: `python-gcp.zip` > Deploy *
+**OR**
+- Runtime > Python 3.8 > Source code > Cloud Source repository > Branch > Branch name ... > Directory ... > Deploy *
+  * in IAM, add *Cloud Functions Service Agent* and *Service Account User* Roles to the Member
 #### Test
 - Actions > Test function
 #### Automate
-- Cloud Scheduler > Create Job > Name ... > Frequency: `0 7 * * *` > Timezone ... > Target: Pub/Sub > Topic ... > Payload ... > Create
+- Cloud Scheduler > Create Job > Select a region: ... > Name ... > Frequency: `0 7 * * *` > Timezone ... > Target: Pub/Sub > Topic ... > Payload ... > Create
 
 ![](GCP/gcp.png)
 
