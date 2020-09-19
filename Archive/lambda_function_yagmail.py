@@ -1,4 +1,3 @@
-import keyring
 import os
 import requests
 import yagmail
@@ -11,6 +10,7 @@ BASE_URL = [
 'https://www.titan.fitness/racks/squat-stands/t-3-series/t-3-series-short-squat-stand-with-j-hooks/400925.2.html',
 'https://www.titan.fitness/racks/squat-stands/t-3-series/titan-t-3-series-squat-stand-v2/400994.html',
 'https://www.titan.fitness/strength/weight-plates/bumper-plates/230-lb-set-economy-black-bumper-plates/430117.html',
+'https://www.titan.fitness/strength/weight-plates/cast-iron-plates/cast-iron-olympic-weight-plates-%7C-245-lb-set/430230.html',
 'https://www.titan.fitness/strength/dumbbells/rubber-coated-hex/pair-of-75-lb-black-rubber-coated-hex-dumbbells/421076.html',
 'https://www.titan.fitness/strength/dumbbells/rubber-coated-hex/pair-of-100-lb-black-rubber-coated-hex-dumbbells/421101.html',
 'https://www.titan.fitness/racks/bench-press-rack-with-flip-down-safeties/400597.html',
@@ -25,15 +25,12 @@ for page in BASE_URL:
 
     # take out the <div> of name and get its value
     product_name_box = soup.find('span', attrs={'class': 'h1 product-name'})
-    product_name = product_name_box.text.strip()
-
-    price_box = soup.find('span', attrs={'class': 'sales'})
-    price = price_box.text.strip()
+    product_name = (product_name_box.text.strip())
 
     availability_box = soup.find('span', attrs={'class': 'availability-msg'})
-    availability = availability_box.text.strip()
+    availability = (availability_box.text.strip())
 
-    status = 'Product Name: ' + product_name + '\n' + 'Price:        ' + price + '\n' + 'Availability: ' + availability
+    status = 'Product Name: ' + product_name + '\n' + 'Availability: ' + availability
 
     # create a text file
     with open ('/tmp/titan.txt', 'a') as f:
@@ -43,8 +40,8 @@ def send_email():
     FROM = 'george.davitiani@gmail.com'
     TO = 'george.davitiani@gmail.com'
     subject = 'Titan Fitness'
-    contents = 'titan.txt'
-    yag = yagmail.SMTP(FROM)
+    contents = '/tmp/titan.txt'
+    yag = yagmail.SMTP(FROM, 'hkxzacjexgundssc')
     yag.send(TO, subject, contents)
 
 # email if keywords are found in the text file
