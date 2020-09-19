@@ -68,7 +68,7 @@ Can be run locally, on **AWS Lambda**, on **GCP Cloud Functions**, or on **GitHu
 ![](GCP/gcp-folder.png)
 
 
-## Things to add
+## Features to add
 - automate to run daily - **DONE** - using Windows Task Scheduler, AWS EventBridge, or GCP Cloud Scheduler
 - email only if status =/= Out of Stock - **DONE**
 - email only the products that are available
@@ -84,6 +84,7 @@ Can be run locally, on **AWS Lambda**, on **GCP Cloud Functions**, or on **GitHu
 - run new code in GCP (would need to provide AWS access key ID and secret access key)
 - run new code in GitHub Actions (would need to provide AWS access key ID and secret access key)
 - update documentation
+- separate the URL list from the code
 
 
 ## Issues
