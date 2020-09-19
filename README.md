@@ -23,7 +23,7 @@ Can be run locally, on **AWS Lambda**, on **GCP Cloud Functions**, or on **GitHu
 
 ## Usage
 ### AWS Instructions
-- download the `python-aws.zip` file from [AWS](/AWS)
+- download the `python-aws.zip` file from the [AWS](/AWS) folder
 #### Create a function
 - **[AWS](https://console.aws.amazon.com)** > Lambda > Create function
 - Author from scratch > Function name ... > Runtime: Python 3.8 > Permissions: Create a new role with basic Lambda permissions *
