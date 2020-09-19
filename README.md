@@ -61,7 +61,7 @@ Can be run locally, on **AWS Lambda**, on **GCP Cloud Functions**, or on **GitHu
 
 ![](AWS/aws-folder.png)
 
-### GCP
+### GCP - *** TO BE UPDATED ***
 - put the `main.py` and the `requirements.txt` files there
 - archive all of the packages, the `main.py` and the `requirements.txt` files into a **zip** file
 
@@ -80,7 +80,7 @@ Can be run locally, on **AWS Lambda**, on **GCP Cloud Functions**, or on **GitHu
 - add URL links in the text file
 - use AWS SNS, SQS, or SES to send email instead of YagMail - **DONE** - using SES
 - containerize it
-- run new code in Lambda
+- run new code in Lambda - **DONE**
 - run new code in GCP (would need to provide AWS access key ID and secret access key)
 - run new code in GitHub Actions (would need to provide AWS access key ID and secret access key)
 - update documentation
