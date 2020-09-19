@@ -16,6 +16,7 @@ Can be run locally, on **AWS Lambda**, on **GCP Cloud Functions**, or on **GitHu
   - EventBridge (CloudWatch Events)
 - **GCP**
   - Cloud Functions
+  - Cloud Source Repositories
   - Pub/Sub
   - Cloud Scheduler
 
