@@ -61,12 +61,12 @@ Can be run locally or on **AWS Lambda** using Amazon SES or on **GCP Cloud Funct
 
 ### AWS
 - put the `lambda_function.py` file there
-- archive all of the packages and the `lambda_functions.py` file into a **zip** file
+- archive all of the packages and the `lambda_functions.py` file into a **zip** file called `python-aws.zip`
 
 
-### GCP - *** TO BE UPDATED ***
+### GCP
 - put the `main.py` and the `requirements.txt` files there (`pip freeze > requirements.txt`)
-- archive all of the packages, the `main.py` and the `requirements.txt` files into a **zip** file
+- archive all of the packages, the `main.py` and the `requirements.txt` files into a **zip** file called `python-gcp.zip`
 
 
 
