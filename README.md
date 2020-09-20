@@ -56,7 +56,7 @@ Can be run **locally**, on **AWS Lambda**, on **GCP Cloud Functions**, or on **G
 ![](GCP/gcp.png)
 
 
-### GCP Instructions
+### GitHub Instructions
 - GitHub > Actions > New workflow > set up a workflow yourself > ...
 
 ![](GitHub/github.png)
