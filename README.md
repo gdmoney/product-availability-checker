@@ -94,7 +94,7 @@ Can be run **locally**, on **AWS Lambda**, on **GCP Cloud Functions**, or on **G
 - containerize it
 - run new code in Lambda - **DONE**
 - run new code in GCP - **DONE** - using Gmail via Yagmail
-- run new code in GitHub Actions (would need to provide AWS access key ID and secret access key)
+- run new code in GitHub Actions - **DONE**
 - update documentation - **DONE**
 - separate the URL list from the code
 
