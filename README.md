@@ -84,7 +84,7 @@ Can be run **locally** and on **AWS Lambda** with Amazon SES or on **GCP Cloud F
 - use AWS SNS, SQS, or SES to send email instead of YagMail - **DONE** - using SES
 - containerize it
 - run new code in Lambda - **DONE**
-- run new code in GCP - **DONE** - using Gmail and Yagmail
+- run new code in GCP - **DONE** - using Gmail via Yagmail
 - run new code in GitHub Actions (would need to provide AWS access key ID and secret access key)
 - update documentation - **DONE**
 - separate the URL list from the code
