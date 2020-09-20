@@ -4,12 +4,12 @@
 ## Project Overview
 Queries each website, checks product availability, and send an email if one of the products is available.  
 
-Can be run locally, on **AWS Lambda**, on **GCP Cloud Functions**, or on **GitHub Actions**
+Can be run locally or on **AWS Lambda** using Amazon SES or on **GCP Cloud Functions** using Gmail.
 
 
 ## Components
 - **Python 3.8**
-  - various libraries: Beautiful Soup, Boto3, Requests, etc.
+  - various libraries: Beautiful Soup, Boto3, Requests, Yagmail, etc.
 - **AWS**
   - Lambda
   - SES
@@ -38,14 +38,14 @@ Can be run locally, on **AWS Lambda**, on **GCP Cloud Functions**, or on **GitHu
 ![](AWS/aws.png)
 
 
-### GCP Instructions - *** TO BE UPDATED ***
-- download the `python-gcp.zip` file from [GCP](/GCP)
+### GCP Instructions
+- download the `python-gcp.zip` file from the [GCP](/GCP) folder
+#### Sync Repos
+ - Cloud Source Repositories > Add repository > Connect external repository > Project: ... > Git provider: GitHub > ... > Connect selected repository
 #### Create a function
 - **[GCP](https://console.cloud.google.com)** > Cloud Functions > Create Function > Function name ... > Region ... > Trigger type:  Cloud Pub/Sub > Create a topic ... > Create Topic
 - Save > Next
-- Runtime > Python 3.8 > Source code > ZIP from Cloud Storage > Browse: `python-gcp.zip` > Deploy *
-**OR**
-- Runtime > Python 3.8 > Source code > Cloud Source repository > Branch > Branch name ... > Directory ... > Deploy *
+- Runtime: Python 3.8 > Source code: Cloud Source repository > Repository: ... > Branch > Branch name ... > Directory ... > Deploy *
   * in IAM, add *Cloud Functions Service Agent* and *Service Account User* Roles to the Member
 #### Test
 - Actions > Test function
@@ -63,13 +63,11 @@ Can be run locally, on **AWS Lambda**, on **GCP Cloud Functions**, or on **GitHu
 - put the `lambda_function.py` file there
 - archive all of the packages and the `lambda_functions.py` file into a **zip** file
 
-![](AWS/aws-folder.png)
 
 ### GCP - *** TO BE UPDATED ***
 - put the `main.py` and the `requirements.txt` files there
 - archive all of the packages, the `main.py` and the `requirements.txt` files into a **zip** file
 
-![](GCP/gcp-folder.png)
 
 
 ## Features to add
@@ -85,9 +83,9 @@ Can be run locally, on **AWS Lambda**, on **GCP Cloud Functions**, or on **GitHu
 - use AWS SNS, SQS, or SES to send email instead of YagMail - **DONE** - using SES
 - containerize it
 - run new code in Lambda - **DONE**
-- run new code in GCP (would need to provide AWS access key ID and secret access key)
+- run new code in GCP - **DONE** - using Gmail and Yagmail
 - run new code in GitHub Actions (would need to provide AWS access key ID and secret access key)
-- update documentation
+- update documentation - **DONE**
 - separate the URL list from the code
 
 
