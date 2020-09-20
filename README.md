@@ -26,8 +26,8 @@ Can be run **locally** and on **AWS Lambda** with Amazon SES or on **GCP Cloud F
 - download the `python-aws.zip` file from the **[AWS](/AWS)** folder
 #### Create a function
 - **[AWS Console](https://console.aws.amazon.com)** > Lambda > Create function
-- Author from scratch > Function name ... > Runtime: Python 3.8 > Permissions: Create a new role with basic Lambda permissions *
-  * * in IAM, attach SES access policy to the Role listed under Permissions
+- Author from scratch > Function name ... > Runtime: Python 3.8 > Permissions: Create a new role with basic Lambda permissions `*`
+  `*` in IAM, attach SES access policy to the Role listed under Permissions
 - Actions > upload a .zip file: `python-aws.zip` > Save
 #### Test
 - Test > Create new test event > Event template: hello-world > Event name ... > Create
