@@ -25,7 +25,7 @@ Can be run **locally** and on **AWS Lambda** with Amazon SES or on **GCP Cloud F
 ### AWS Instructions
 - download the `python-aws.zip` file from the **[AWS](/AWS)** folder
 #### Create a function
-- **[AWS](https://console.aws.amazon.com)** > Lambda > Create function
+- **[AWS Console](https://console.aws.amazon.com)** > Lambda > Create function
 - Author from scratch > Function name ... > Runtime: Python 3.8 > Permissions: Create a new role with basic Lambda permissions *
   * in IAM, attach SES access policy to the Role listed under Permissions
 - Actions > upload a .zip file: `python-aws.zip` > Save
@@ -43,7 +43,7 @@ Can be run **locally** and on **AWS Lambda** with Amazon SES or on **GCP Cloud F
 #### Sync Repos (Optional)
  - Cloud Source Repositories > Add repository > Connect external repository > Project: ... > Git provider: GitHub > ... > Connect selected repository
 #### Create a function
-- **[GCP](https://console.cloud.google.com)** > Cloud Functions > Create Function > Function name ... > Region ... > Trigger type:  Cloud Pub/Sub > Create a topic ... > Create Topic
+- **[GCP Console](https://console.cloud.google.com)** > Cloud Functions > Create Function > Function name ... > Region ... > Trigger type:  Cloud Pub/Sub > Create a topic ... > Create Topic
 - Save > Next
 - Runtime: Python 3.8 > Source code: Cloud Source repository > Repository: ... > Branch > Branch name ... > Directory ... > Deploy *
   * in IAM, add *Cloud Functions Service Agent* and *Service Account User* Roles to the Member
