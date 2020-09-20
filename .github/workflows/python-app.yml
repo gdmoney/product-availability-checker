@@ -32,4 +32,4 @@ jobs:
            pip install beautifulsoup4
 
     - name: Run
-      run: python 6.py
+      run: __main__.py
