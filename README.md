@@ -23,7 +23,7 @@ Can be run **locally** and on **AWS Lambda** with Amazon SES or on **GCP Cloud F
 
 ## Usage
 ### AWS Instructions
-- download the `python-aws.zip` file from the [AWS](/AWS) folder
+- download the `python-aws.zip` file from the **[AWS](/AWS)** folder
 #### Create a function
 - **[AWS](https://console.aws.amazon.com)** > Lambda > Create function
 - Author from scratch > Function name ... > Runtime: Python 3.8 > Permissions: Create a new role with basic Lambda permissions *
@@ -39,7 +39,7 @@ Can be run **locally** and on **AWS Lambda** with Amazon SES or on **GCP Cloud F
 
 
 ### GCP Instructions
-- download the `python-gcp.zip` file from the [GCP](/GCP) folder
+- download the `python-gcp.zip` file from the **[GCP](/GCP)** folder
 #### Sync Repos (Optional)
  - Cloud Source Repositories > Add repository > Connect external repository > Project: ... > Git provider: GitHub > ... > Connect selected repository
 #### Create a function
