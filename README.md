@@ -40,7 +40,7 @@ Can be run locally or on **AWS Lambda** using Amazon SES or on **GCP Cloud Funct
 
 ### GCP Instructions
 - download the `python-gcp.zip` file from the [GCP](/GCP) folder
-#### Sync Repos
+#### Sync Repos (Optional)
  - Cloud Source Repositories > Add repository > Connect external repository > Project: ... > Git provider: GitHub > ... > Connect selected repository
 #### Create a function
 - **[GCP](https://console.cloud.google.com)** > Cloud Functions > Create Function > Function name ... > Region ... > Trigger type:  Cloud Pub/Sub > Create a topic ... > Create Topic
@@ -65,7 +65,7 @@ Can be run locally or on **AWS Lambda** using Amazon SES or on **GCP Cloud Funct
 
 
 ### GCP - *** TO BE UPDATED ***
-- put the `main.py` and the `requirements.txt` files there
+- put the `main.py` and the `requirements.txt` files there (`pip freeze > requirements.txt`)
 - archive all of the packages, the `main.py` and the `requirements.txt` files into a **zip** file
 
 
