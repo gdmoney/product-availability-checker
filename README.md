@@ -56,18 +56,17 @@ Can be run **locally** and on **AWS Lambda** using Amazon SES or on **GCP Cloud 
 
 
 ## Build
+### AWS Instructions
 - create a new folder
 - copy all the required Python packages from `C:\Users\USERNAME\AppData\Local\Programs\Python\Python38-32\Lib\site-packages` to this new folder
-
-### AWS
 - put the `lambda_function.py` file there
 - archive all of the packages and the `lambda_functions.py` file into a **zip** file called `python-aws.zip`
 
-
-### GCP
+### GCP Instructions
+- create a new folder
+- copy all the required Python packages from `C:\Users\USERNAME\AppData\Local\Programs\Python\Python38-32\Lib\site-packages` to this new folder
 - put the `main.py` and the `requirements.txt` files there (`pip freeze > requirements.txt`)
 - archive all of the packages, the `main.py` and the `requirements.txt` files into a **zip** file called `python-gcp.zip`
-
 
 
 ## Features to add
@@ -80,6 +79,7 @@ Can be run **locally** and on **AWS Lambda** using Amazon SES or on **GCP Cloud 
 - add price - **DONE**
 - run it with GitHub Actions - **DONE**
 - add URL links in the text file
+- insert info in the email body (instead of the attachment)
 - use AWS SNS, SQS, or SES to send email instead of YagMail - **DONE** - using SES
 - containerize it
 - run new code in Lambda - **DONE**
