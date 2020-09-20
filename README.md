@@ -4,7 +4,7 @@
 ## Project Overview
 Queries each website, checks product availability, and send an email if one of the products is available.  
 
-Can be run **locally** and on **AWS Lambda** using Amazon SES or on **GCP Cloud Functions** using Gmail.
+Can be run **locally** and on **AWS Lambda** with Amazon SES or on **GCP Cloud Functions** with Gmail.
 
 
 ## Components
