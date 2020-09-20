@@ -47,7 +47,7 @@ Can be run **locally** and on **AWS Lambda** with Amazon SES or on **GCP Cloud F
 - Save > Next
 - Runtime: Python 3.8 > Source code `*`: Cloud Source repository > Repository: ... > Branch > Branch name ... > Directory ... > Deploy `*`  
   `*` in IAM, add *Cloud Functions Service Agent* and *Service Account User* Roles to the Member
-- `*` **OR** Source code: ZIP Upload > `python-gcp.zip` > Deploy
+  - `*` **OR** Source code: ZIP Upload > `python-gcp.zip` > Deploy
 #### Test
 - Actions > Test function
 #### Automate
