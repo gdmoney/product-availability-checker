@@ -79,11 +79,11 @@ Can be run **locally**, on **AWS Lambda**, on **GCP Cloud Functions**, or on **G
 
 ### GitHub Instructions
 - GitHub > Settings > Secrets >  
-  - New secret > Name: AWS_ACCESS_KEY_ID, Value ... > Add secret  
-  - New secret > Name: AWS_SECRET_ACCESS_KEY, Value ... > Add secret
+  - New secret > Name: `AWS_ACCESS_KEY_ID`, Value ... > Add secret  
+  - New secret > Name: `AWS_SECRET_ACCESS_KEY`, Value ... > Add secret
 
 
-## Features to add
+## Possible Improvements
 - automate to run daily - **DONE** - using Windows Task Scheduler, AWS EventBridge, or GCP Cloud Scheduler
 - email only if status =/= Out of Stock - **DONE**
 - email only the products that are available
