@@ -19,6 +19,8 @@ Can be run **locally**, on **AWS Lambda**, on **GCP Cloud Functions**, or on **G
   - Cloud Source Repositories
   - Pub/Sub
   - Cloud Scheduler
+- **GirHub**
+  - Actions
 
 
 ## Usage
@@ -76,7 +78,9 @@ Can be run **locally**, on **AWS Lambda**, on **GCP Cloud Functions**, or on **G
 - archive all of the packages, the `main.py` and the `requirements.txt` files into a **zip** file called `python-gcp.zip`
 
 ### GitHub Instructions
-- GitHub > Settings > Secrets > New secret > Name: AWS_ACCESS_KEY_ID, Value ... > Add secret > New secret > Name: AWS_SECRET_ACCESS_KEY, Value ... > Add secret
+- GitHub > Settings > Secrets >  
+  - New secret > Name: AWS_ACCESS_KEY_ID, Value ... > Add secret  
+  - New secret > Name: AWS_SECRET_ACCESS_KEY, Value ... > Add secret
 
 
 ## Features to add
