@@ -19,7 +19,7 @@ Can be run **locally**, on **AWS Lambda**, on **GCP Cloud Functions**, or on **G
   - Cloud Source Repositories
   - Pub/Sub
   - Cloud Scheduler
-- **GirHub**
+- **GitHub**
   - Actions
 
 
