@@ -99,6 +99,10 @@ Can be run **locally**, on **AWS Lambda**, on **GCP Cloud Functions**, or on **G
 - run new code in GitHub Actions - **DONE**
 - update documentation - **DONE**
 - separate the URL list from the code
+[x] - asdfasdfasdfasdf
+[x] asdfasdfasdf
+[] - asdfasdfasdf
+[] asdfasdfasdf
 
 
 ## Issues
