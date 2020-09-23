@@ -98,9 +98,7 @@ Can be run **locally**, on **AWS Lambda**, on **GCP Cloud Functions**, or on **G
 - run new code in GCP - **DONE** - using Gmail via Yagmail
 - run new code in GitHub Actions - **DONE**
 - update documentation - **DONE**
-- separate the URL list from the code  
-- [x] asdfasdfasdf
-- [ ] asdfasdfasdf
+- separate the URL list from the code
 
 
 ## Issues
