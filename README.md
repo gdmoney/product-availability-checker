@@ -59,6 +59,9 @@ Can be run **locally**, on **AWS Lambda**, on **GCP Cloud Functions**, or on **G
 
 
 ### GitHub Instructions
+- GitHub > Settings > Secrets >  
+  - New secret > Name: `AWS_ACCESS_KEY_ID`, Value ... > Add secret  
+  - New secret > Name: `AWS_SECRET_ACCESS_KEY`, Value ... > Add secret
 - GitHub > Actions > New workflow > set up a workflow yourself > ...
 
 ![](GitHub/github.png)
@@ -76,11 +79,6 @@ Can be run **locally**, on **AWS Lambda**, on **GCP Cloud Functions**, or on **G
 - copy all the required Python packages from `C:\Users\USERNAME\AppData\Local\Programs\Python\Python38-32\Lib\site-packages` to this new folder
 - put the `main.py` and the `requirements.txt` files there (`pip freeze > requirements.txt`)
 - archive all of the packages, the `main.py` and the `requirements.txt` files into a **zip** file called `python-gcp.zip`
-
-### GitHub Instructions
-- GitHub > Settings > Secrets >  
-  - New secret > Name: `AWS_ACCESS_KEY_ID`, Value ... > Add secret  
-  - New secret > Name: `AWS_SECRET_ACCESS_KEY`, Value ... > Add secret
 
 
 ## Possible Improvements
