@@ -1,5 +1,5 @@
-# pip install boto3
 # pip install beautifulsoup4
+# pip install boto3
 # pip install requests
 
 import boto3
