@@ -108,3 +108,4 @@ Can be run **locally**, on **AWS Lambda**, on **GCP Cloud Functions**, or on **G
   - tried: keyring, oauth, different gmail acct - no bueno
   - try EZGmail instead of Yagmail
 - `__main.py__` is not sending email - local, AWS, GitHub (09.25.2020)
+  - try SendGrid instead of Yagmail
