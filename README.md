@@ -51,7 +51,7 @@ Can be run **locally**, on **AWS Lambda**, on **GCP Cloud Functions**, or on **G
   `*` **OR** Source code: ZIP Upload > `python-gcp.zip` > Deploy  
   - in IAM, add *Cloud Functions Service Agent* and *Service Account User* Roles to the Member  
 #### Test
-- Actions > Test function
+- Actions > Test function > Test the function
 #### Automate
 - Cloud Scheduler > Create Job > Select a region: ... > Name ... > Frequency: `0 7 * * *` > Timezone ... > Target: Pub/Sub > Topic ... > Payload ... > Create
 
@@ -65,6 +65,8 @@ Can be run **locally**, on **AWS Lambda**, on **GCP Cloud Functions**, or on **G
 - GitHub > Actions > New workflow > set up a workflow yourself > ...
 
 ![](GitHub/github.png)
+#### Test
+- Actions > Workflows: `product-availability-checker` > Re-run jobs
 
 
 ## Build
