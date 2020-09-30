@@ -107,5 +107,6 @@ Can be run **locally**, on **AWS Lambda**, on **GCP Cloud Functions**, or on **G
 - not sending email, code is running successfully, I think it's something with Gmail or Yagmail - **FIXED** - using AWS SES
   - tried: keyring, oauth, different gmail acct - no bueno
   - try EZGmail instead of Yagmail
-- `__main.py__` is not sending email - local, AWS, GitHub (09.25.2020)
+- GCP, GitHub, and local are not sending email (09.25.2020)
   - try SendGrid instead of Yagmail
+- AWS is also not sending email (09.30.2020)
