@@ -88,8 +88,7 @@ def send_email():
     # Add a header to tell the email client to treat this part as an attachment, and to give the attachment a name.
     att.add_header('Content-Disposition','attachment',filename=os.path.basename(ATTACHMENT))
 
-    # Attach the multipart/alternative child container to the multipart/mixed
-    # parent container.
+    # Attach the multipart/alternative child container to the multipart/mixed parent container.
     msg.attach(msg_body)
 
     # Add the attachment to the parent container.
