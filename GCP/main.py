@@ -42,7 +42,7 @@ for page in BASE_URL:
 def send_email():
     FROM = 'george.davitiani@gmail.com'
     TO = 'george.davitiani@gmail.com'
-    subject = 'Titan Fitness'
+    subject = 'Titan Fitness Inventory Report'
     contents = '/tmp/titan.txt'
     yag = yagmail.SMTP(FROM, 'zmytgndtkxdukwwk')
     yag.send(TO, subject, contents)

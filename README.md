@@ -111,4 +111,5 @@ Can be run **locally**, on **AWS Lambda**, on **GCP Cloud Functions**, or on **G
   - try EZGmail instead of Yagmail
 - GCP, GitHub, and local are not sending email (09.25.2020)
   - try SendGrid instead of Yagmail
-- AWS is also not sending email (09.30.2020)
+- AWS is also not sending email as of 09.30.2020
+- all 3 started working again on 10.02.2020
