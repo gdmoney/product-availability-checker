@@ -43,7 +43,8 @@ def send_email():
     FROM = 'george.davitiani@gmail.com'
     TO = 'george.davitiani@gmail.com'
     subject = 'Titan Fitness Inventory Report'
-    contents = '/tmp/titan.txt'
+    #contents = '/tmp/titan.txt'
+    contents = [yagmail.inline('/tmp/titan.txt')]
     yag = yagmail.SMTP(FROM, 'zmytgndtkxdukwwk')
     yag.send(TO, subject, contents)
 
