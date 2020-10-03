@@ -54,6 +54,8 @@ Can be run **locally**, on **AWS Lambda**, on **GCP Cloud Functions**, or on **G
 - Actions > Test function > Test the function
 #### Automate
 - Cloud Scheduler > Create Job > Select a region: ... > Name ... > Frequency: `0 7 * * *` > Timezone ... > Target: Pub/Sub > Topic ... > Payload ... > Create
+#### Update
+- Edit > Next > Deploy
 
 ![](GCP/gcp.png)
 
