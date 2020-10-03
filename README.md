@@ -66,7 +66,7 @@ Can be run **locally**, on **AWS Lambda**, on **GCP Cloud Functions**, or on **G
   - New secret > Name: `AWS_SECRET_ACCESS_KEY`, Value ... > Add secret
 - GitHub > Actions > New workflow > set up a workflow yourself > ...
 
-![](GitHub/github.png)
+[![](/GitHub/github.png)](/.github/workflows/python-app.yml)
 #### Test
 - Actions > Workflows: `product-availability-checker` > Re-run jobs
 
