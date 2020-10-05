@@ -92,6 +92,7 @@ Can be run **locally**, on **AWS Lambda**, on **GCP Cloud Functions**, or on **G
 - email only the products that are available
 - run it on AWS Lambda - **DONE**
 - link GitHub and AWS Lambda
+- link GitHub and GCP Cloud Source Repositories - **DONE**
 - run it on GCP Functions - **DONE**
 - add price - **DONE**
 - run it with GitHub Actions - **DONE**
