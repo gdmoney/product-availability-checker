@@ -1,4 +1,4 @@
-name: product-availability-checker
+name: run-on-gh-actions
 
 on:
   push:
