@@ -109,8 +109,8 @@ Can be run **locally**, on **AWS Lambda**, on **GCP Cloud Functions**, or on **G
 - [x] run it on GCP Functions
 - [x] add price
 - [x] run it with GitHub Actions
-- [ ] add URL links in the text file
 - [ ] insert info in the email body (instead of the attachment)
+- [ ] hyperlink product webpage URLs to the product names
 - [x] use AWS SNS, SQS, or SES to send email instead of YagMail (using SES)
 - [ ] containerize it
 - [x] run new code in Lambda
