@@ -121,11 +121,14 @@ Can be run **locally**, on **AWS Lambda**, on **GCP Cloud Functions**, or on **G
 
 
 ## Issues
-- [x] sends email even when all of the products are out of stock - **FIXED**
-- [x] only GCP email came, not AWS, GitHub, or when run locally (09.15.2020) - **FIXED** - one of the URLs became broken
-- not sending email, code is running successfully, I think it's something with Gmail or Yagmail - **FIXED** - using AWS SES
+- [x] sends email even when all of the products are out of stock
+- [x] only GCP email came, not AWS, GitHub, or when run locally (09.15.2020)
+  - one of the URLs became broken
+- [x] not sending email, code is running successfully, I think it's something with Gmail or Yagmail
   - tried: keyring, oauth, different gmail acct - no bueno
   - try EZGmail instead of Yagmail
-- GCP, GitHub, and local are not sending email (09.25.2020) - **FIXED** - all 3 started working again on 10.02.2020
-  - try SendGrid instead of Yagmail - **FIXED** - all 3 started working again on 10.02.2020
-- AWS is also not sending email as of 09.30.2020 - **FIXED** - all 3 started working again on 10.02.2020
+  - fixed by changing email to use AWS SES
+- [x] GCP, GitHub, and local are not sending email (09.25.2020)
+  - all 3 started working again on 10.02.2020
+- [x] AWS is also not sending email as of 09.30.2020
+  - all 3 started working again on 10.02.2020
