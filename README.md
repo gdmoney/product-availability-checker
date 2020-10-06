@@ -8,9 +8,15 @@ Can be run **locally**, on **AWS Lambda**, on **GCP Cloud Functions**, or on **G
 
 
 ## Table of Contents
-- [Components](#Components)
-- [Usage](#Usage)
-  - [AWS Instructions](#AWS Instructions)
+- **[Components](#Components)
+- **[Usage](#Usage)
+  - **[AWS](#AWS Usage Instructions)
+  - **[GCP](#GCP Usage Instructions)
+  - **[GitHub](#GitHub Usage Instructions)
+- **[Build](#Build)
+  - **[AWS](#AWS Build Instructions)
+  - **[GCP](#GCP Build Instructions)
+  
 
 ## Components
 - **Python 3.8**
@@ -29,7 +35,7 @@ Can be run **locally**, on **AWS Lambda**, on **GCP Cloud Functions**, or on **G
 
 
 ## Usage
-### AWS Instructions
+### AWS Usage Instructions
 - download the `python-aws.zip` file from the **[AWS](/AWS)** folder
 #### Create a function
 - **[AWS Console](https://console.aws.amazon.com)** > Lambda > Create function
@@ -45,7 +51,7 @@ Can be run **locally**, on **AWS Lambda**, on **GCP Cloud Functions**, or on **G
 ![](AWS/aws.png)
 
 
-### GCP Instructions
+### GCP Usage Instructions
 - download the `python-gcp.zip` file from the **[GCP](/GCP)** folder
 #### Sync Repos (Optional)
  - **[GCP Console](https://console.cloud.google.com)** > Cloud Source Repositories > Add repository > Connect external repository > Project: ... > Git provider: GitHub > ... > Connect selected repository
@@ -65,7 +71,7 @@ Can be run **locally**, on **AWS Lambda**, on **GCP Cloud Functions**, or on **G
 ![](GCP/gcp.png)
 
 
-### GitHub Instructions
+### GitHub Usage Instructions
 - GitHub > Settings > Secrets >  
   - New secret > Name: `AWS_ACCESS_KEY_ID`, Value ... > Add secret  
   - New secret > Name: `AWS_SECRET_ACCESS_KEY`, Value ... > Add secret
@@ -77,13 +83,13 @@ Can be run **locally**, on **AWS Lambda**, on **GCP Cloud Functions**, or on **G
 
 
 ## Build
-### AWS Instructions
+### AWS Build Instructions
 - create a new folder
 - copy all the required Python packages from `C:\Users\USERNAME\AppData\Local\Programs\Python\Python38-32\Lib\site-packages` to this new folder
 - put the `lambda_function.py` file there
 - archive all of the packages and the `lambda_functions.py` file into a **zip** file called `python-aws.zip`
 
-### GCP Instructions
+### GCP Build Instructions
 - create a new folder
 - copy all the required Python packages from `C:\Users\USERNAME\AppData\Local\Programs\Python\Python38-32\Lib\site-packages` to this new folder
 - put the `main.py` and the `requirements.txt` files there (`pip freeze > requirements.txt`)
