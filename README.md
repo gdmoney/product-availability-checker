@@ -7,6 +7,11 @@ Queries each website, checks product availability, and send an email if one of t
 Can be run **locally**, on **AWS Lambda**, on **GCP Cloud Functions**, or on **GitHub Actions**.
 
 
+## Table of Contents
+- [Components](#Components)
+- [Usage](#Usage)
+  - [AWS Instructions](#AWS Instructions)
+
 ## Components
 - **Python 3.8**
   - various libraries: Beautiful Soup, Boto3, Requests, Yagmail, etc.
