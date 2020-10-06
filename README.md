@@ -100,24 +100,24 @@ Can be run **locally**, on **AWS Lambda**, on **GCP Cloud Functions**, or on **G
 
 
 ## Possible Improvements
-- automate to run daily - **DONE** - using Windows Task Scheduler, AWS EventBridge, or GCP Cloud Scheduler
-- email only if status =/= Out of Stock - **DONE**
-- email only the products that are available
-- run it on AWS Lambda - **DONE**
-- sync GitHub and AWS Lambda
-- sync GitHub and GCP Cloud Source Repositories - **DONE**
-- run it on GCP Functions - **DONE**
-- add price - **DONE**
-- run it with GitHub Actions - **DONE**
-- add URL links in the text file
-- insert info in the email body (instead of the attachment)
-- use AWS SNS, SQS, or SES to send email instead of YagMail - **DONE** - using SES
-- containerize it
-- run new code in Lambda - **DONE**
-- run new code in GCP - **DONE** - using Gmail via Yagmail
-- run new code in GitHub Actions - **DONE**
-- update documentation - **DONE**
-- separate the URL list from the code
+- [x] automate to run daily
+- [x] email only if status =/= Out of Stock
+- [ ] email only the products that are available
+- [x] run it on AWS Lambda
+- [ ] sync GitHub and AWS Lambda
+- [x] sync GitHub and GCP Cloud Source Repositories
+- [x] run it on GCP Functions
+- [x] add price
+- [x] run it with GitHub Actions
+- [ ] add URL links in the text file
+- [ ] insert info in the email body (instead of the attachment)
+- [ ] use AWS SNS, SQS, or SES to send email instead of YagMail
+- [ ] containerize it
+- [x] run new code in Lambda
+- [x] run new code in GCP
+- [x] run new code in GitHub Actions
+- [x] update documentation
+- [ ] separate the URL list from the code
 
 
 ## Issues
