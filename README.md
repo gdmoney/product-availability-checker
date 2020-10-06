@@ -128,7 +128,7 @@ Can be run **locally**, on **AWS Lambda**, on **GCP Cloud Functions**, or on **G
   - tried: keyring, oauth, different gmail acct - no bueno
   - try EZGmail instead of Yagmail
   - fixed by changing email to use AWS SES
-- [x] GCP, GitHub, and local are not sending email (09.25.2020)
+- [x] GCP, GitHub, and local are not sending email as of 09.25.2020
   - all 3 started working again on 10.02.2020
 - [x] AWS is also not sending email as of 09.30.2020
   - all 3 started working again on 10.02.2020
