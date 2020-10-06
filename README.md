@@ -10,12 +10,12 @@ Can be run **locally**, on **AWS Lambda**, on **GCP Cloud Functions**, or on **G
 ## Table of Contents
 - **[Components](#Components)**
 - **[Usage](#Usage)**
-  - **[AWS](#AWS Usage Instructions)**
-  - **[GCP](#GCP Usage Instructions)**
-  - **[GitHub](#GitHub Usage Instructions)**
+  - **[AWS](#aws-usage-instructions)**
+  - **[GCP](#gcp-usage-instructions)**
+  - **[GitHub](#github-usage-instructions)**
 - **[Build](#Build)**
-  - **[AWS](#AWS Build Instructions)**
-  - **[GCP](#GCP Build Instructions)**
+  - **[AWS](#aws-build-instructions)**
+  - **[GCP](#gcp-build-instructions)**
   
 
 ## Components
