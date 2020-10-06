@@ -102,7 +102,7 @@ Can be run **locally**, on **AWS Lambda**, on **GCP Cloud Functions**, or on **G
 ## Possible Improvements
 - [x] automate to run daily
 - [x] email only if status =/= Out of Stock
-- [ ] email only the products that are available
+- [ ] email only the products that are available or on backorder
 - [x] run it on AWS Lambda
 - [ ] sync GitHub and AWS Lambda
 - [x] sync GitHub and GCP Cloud Source Repositories
