@@ -8,14 +8,16 @@ Can be run **locally**, on **AWS Lambda**, on **GCP Cloud Functions**, or on **G
 
 
 ## Table of Contents
-- **[Components](#Components)**
-- **[Usage](#Usage)**
+- **[Components](#components)**
+- **[Usage](#usage)**
   - **[AWS](#aws-usage-instructions)**
   - **[GCP](#gcp-usage-instructions)**
   - **[GitHub](#github-usage-instructions)**
 - **[Build](#Build)**
   - **[AWS](#aws-build-instructions)**
   - **[GCP](#gcp-build-instructions)**
+- **[Possible Imrovements](#possible-improvements)**
+- **[Issues](#issues)
   
 
 ## Components
