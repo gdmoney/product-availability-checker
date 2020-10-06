@@ -121,8 +121,8 @@ Can be run **locally**, on **AWS Lambda**, on **GCP Cloud Functions**, or on **G
 
 
 ## Issues
-- sends email even when all of the products are out of stock - **FIXED**
-- only GCP email came, not AWS, GitHub, or when run locally (09.15.2020) - **FIXED** - one of the URLs became broken
+[x] sends email even when all of the products are out of stock - **FIXED**
+[x] only GCP email came, not AWS, GitHub, or when run locally (09.15.2020) - **FIXED** - one of the URLs became broken
 - not sending email, code is running successfully, I think it's something with Gmail or Yagmail - **FIXED** - using AWS SES
   - tried: keyring, oauth, different gmail acct - no bueno
   - try EZGmail instead of Yagmail
