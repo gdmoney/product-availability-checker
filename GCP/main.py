@@ -10,6 +10,7 @@ BASE_URL = [
 'https://www.titan.fitness/strength/weight-plates/cast-iron-plates/10-lb-pair-cast-iron-olympic-plates/430210.html',
 'https://www.titan.fitness/strength/weight-plates/cast-iron-plates/5-lb-pair-cast-iron-olympic-plates/430209.html',
 'https://www.titan.fitness/strength/dumbbells/rubber-coated-hex/pair-of-75-lb-black-rubber-coated-hex-dumbbells/421076.html',
+'https://www.titan.fitness/strength/dumbbells/rubber-coated-hex/pair-of-85-lb-black-rubber-coated-hex-dumbbells/421086.html',
 'https://www.titan.fitness/strength/dumbbells/rubber-coated-hex/pair-of-90-lb-black-rubber-coated-hex-dumbbells/421091.html',
 'https://www.titan.fitness/strength/dumbbells/neoprene/neoprene-light-weight-dumbbell-set---1%2C-2%2C-3-%2C-4-lb/420003.html',
 'https://www.titan.fitness/strength/specialty-machines/lower-body/economy-h-pnd/401027.html'
