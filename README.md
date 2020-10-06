@@ -111,7 +111,7 @@ Can be run **locally**, on **AWS Lambda**, on **GCP Cloud Functions**, or on **G
 - [x] run it with GitHub Actions
 - [ ] add URL links in the text file
 - [ ] insert info in the email body (instead of the attachment)
-- [ ] use AWS SNS, SQS, or SES to send email instead of YagMail
+- [x] use AWS SNS, SQS, or SES to send email instead of YagMail (using SES)
 - [ ] containerize it
 - [x] run new code in Lambda
 - [x] run new code in GCP
