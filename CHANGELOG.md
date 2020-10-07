@@ -6,11 +6,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [v0.1.2] - 2020.07.10
 ### Added
-- Added the CHANGELOG file
+- Added the **CHANGELOG** file
 
 ## [v0.1.1] - 2020.07.09
 ### Added
-- Added a Table of Contents to the README file
+- Added a Table of Contents to the **README** file
 
 *****
 
