@@ -6,7 +6,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ## [v0.1.2] - 2020.07.10
 ### Added
-- Added the **CHANGELOG** file
+- Added this **CHANGELOG** file
 
 ## [v0.1.1] - 2020.07.09
 ### Added
