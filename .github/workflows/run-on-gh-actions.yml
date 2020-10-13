@@ -18,7 +18,7 @@ jobs:
 
     runs-on: ubuntu-latest
     steps:
-    - name: checkout source code
+    - name: Checkout source code
       uses: actions/checkout@v2
         
     - name: Set up Python 3.8
@@ -26,13 +26,14 @@ jobs:
       with:
         python-version: 3.8
 
-    - name: Install Dependencies
-      run: python -m pip install --upgrade pip
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
         pip install beautifulsoup4
         pip install boto3
         pip install requests
 
-    - name: Configure AWS Credentials
+    - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v1
       with:
         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
