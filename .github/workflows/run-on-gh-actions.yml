@@ -14,8 +14,7 @@ on:
   - cron: '0 12 * * *'
 
 jobs:
-  build:
-
+  deploy:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout source code
