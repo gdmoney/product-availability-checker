@@ -24,6 +24,7 @@ jobs:
     - uses: actions/upload-artifact@v2
       with:
         name: lambda.zip
+        path: AWS/lambda.zip
  
   deploy:
     needs: zip-files
