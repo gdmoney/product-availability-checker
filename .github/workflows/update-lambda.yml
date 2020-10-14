@@ -23,7 +23,7 @@ jobs:
       uses: papeloto/action-zip@v1
       with:
         files: AWS
-        dest: lambda.zip
+        dest: AWS/lambda.zip
 
     - name: Upload Zip file
       uses: actions/upload-artifact@v2
