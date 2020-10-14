@@ -26,11 +26,12 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - uses: ./stcalica/update-lambda
-      - run: echo "THIS IS A TEST PACKAGE" > file.txt
-      - run: zip lambda.zip file.txt
         with:
           package: lambda.zip
           function-name: TEST-FUNCTION
           AWS_SECRET_ID: ${{ secrets.AWS_SECRET_ID }}
           AWS_SECRET_KEY: ${{ secrets.AWS_SECRET_KEY }}
           AWS_REGION: us-west-2
+      - name: Run
+        run: echo "THIS IS A TEST PACKAGE" > file.txt
+      - run: zip lambda.zip file.txt
