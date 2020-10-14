@@ -21,6 +21,9 @@ jobs:
       with:
         files: AWS
         dest: lambda.zip
+    - uses: actions/upload-artifact@v2
+      with:
+        name: lambda.zip
  
   deploy:
     needs: zip-files
@@ -28,7 +31,10 @@ jobs:
     steps:
     - name: Checkout source code
       uses: actions/checkout@v2
-        
+    - uses: actions/download-artifact@v2
+      with:
+        name: lambda.zip
+
     - name: Set up Python 3.8
       uses: actions/setup-python@v2
       with:
@@ -50,4 +56,4 @@ jobs:
       run: |
         aws lambda update-function-code \
           --function-name  product-availability-checker \
-          --zip-file fileb://tmp/lambda.zip
+          --zip-file fileb://lambda.zip
