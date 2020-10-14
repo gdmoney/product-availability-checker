@@ -8,6 +8,8 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email.mime.application import MIMEApplication
 
+# blahblahblah
+
 BASE_URL = [
 'https://www.titan.fitness/strength/weight-plates/bumper-plates/230-lb-set-economy-black-bumper-plates/430117.html',
 'https://www.titan.fitness/strength/weight-plates/bumper-plates/45-lb-single-economy-black-bumper-plate/430105.2.html',
