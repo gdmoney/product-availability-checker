@@ -12,6 +12,7 @@ on:
     - master
 
 jobs:
+  
   zip-files:
     runs-on: ubuntu-latest
     steps:
@@ -20,18 +21,18 @@ jobs:
         with:
           files: AWS
           dest: lambda.zip
+  
   lambda:
     needs: zip-files
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: ./stcalica/update-lambda@master
+      - uses: actions/checkout@master
+      - run: echo "THIS IS A TEST PACKAGE" > file.txt
+      - run: zip lambda.zip file.txt
+      - uses: yvesgurcan/deploy-lambda-function
         with:
           package: lambda.zip
           function-name: TEST-FUNCTION
+          AWS_REGION: us-west-2
           AWS_SECRET_ID: ${{ secrets.AWS_SECRET_ID }}
           AWS_SECRET_KEY: ${{ secrets.AWS_SECRET_KEY }}
-          AWS_REGION: us-west-2
-      - name: Run
-        run: echo "THIS IS A TEST PACKAGE" > file.txt
-      - run: zip lambda.zip file.txt
