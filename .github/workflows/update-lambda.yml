@@ -24,10 +24,10 @@ jobs:
     needs: zip-files
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@master
+      - uses: ./stcalica/update-lambda
       - run: echo "THIS IS A TEST PACKAGE" > file.txt
       - run: zip lambda.zip file.txt
-      - uses: ./stcalica/update-lambda
         with:
           package: lambda.zip
           function-name: TEST-FUNCTION
