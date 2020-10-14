@@ -4,11 +4,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](https://semver.org/).
 
-## [v0.1.2] - 2020.07.10
+## [v0.1.3] - 2020.10.14
+### Changed
+- Configured GitHub to auto update Lambda using GH Actions
+- No need to manually re-deploy the existing Lambda function after every code change
+
+## [v0.1.2] - 2020.10.07
 ### Added
 - Added this **CHANGELOG** file
 
-## [v0.1.1] - 2020.07.09
+## [v0.1.1] - 2020.10.07
 ### Added
 - Added a Table of Contents to the **README** file
 
