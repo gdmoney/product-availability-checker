@@ -49,6 +49,8 @@ Can be run **locally**, on **AWS Lambda**, on **GCP Cloud Functions**, or on **G
 - Test
 #### Automate
 - Designer > Add trigger > EventBridge > Rule: Create a new rule > Rule name ... > Rule type: Schedule expression > Schedule expression: `cron(0 13 * * ? *)` > Add  
+#### Update
+- Automated using GitHub Actions
 
 ![](AWS/aws.png)
 
