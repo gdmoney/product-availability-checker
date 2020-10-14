@@ -104,7 +104,7 @@ Can be run **locally**, on **AWS Lambda**, on **GCP Cloud Functions**, or on **G
 - [x] email only if status =/= Out of Stock
 - [ ] email only the products that are available or on backorder
 - [x] run it on AWS Lambda
-- [ ] sync GitHub and AWS Lambda
+- [X] sync GitHub and AWS CodePipeline
 - [x] sync GitHub and GCP Cloud Source Repositories
 - [x] run it on GCP Functions
 - [x] add price
