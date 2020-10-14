@@ -25,8 +25,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout source code
-        uses: actions/checkout@v2
-
+      - uses: actions/checkout@v2
       - run: echo "THIS IS A TEST PACKAGE" > file.txt
       - run: zip lambda.zip file.txt
       - uses: ./stcalica/update-lambda
