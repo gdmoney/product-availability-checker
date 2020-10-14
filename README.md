@@ -79,7 +79,7 @@ Can be run **locally**, on **AWS Lambda**, on **GCP Cloud Functions**, or on **G
   - New secret > Name: `AWS_SECRET_ACCESS_KEY`, Value ... > Add secret
 - GitHub > Actions > New workflow > set up a workflow yourself > ...
 
-[![](/GitHub/github.png)](/.github/workflows/python-app.yml)
+[![](/GitHub/github.png)](/.github/workflows/run-on-gh-actions.yml)
 #### Test
 - Actions > Workflows: `product-availability-checker` > Re-run jobs
 
@@ -132,4 +132,4 @@ Can be run **locally**, on **AWS Lambda**, on **GCP Cloud Functions**, or on **G
   - all 3 started working again on 10.02.2020
 - [x] AWS is also not sending email as of 09.30.2020
   - all 3 started working again on 10.02.2020
-- [ ] GitHub is synced with the cloud repos but code/function re-deployment after a change is still a manual process
+- [x] GitHub is synced with the cloud repos but code/function re-deployment after a change is still a manual process
