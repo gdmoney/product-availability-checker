@@ -135,3 +135,4 @@ Can be run **locally**, on **AWS Lambda**, on **GCP Cloud Functions**, or on **G
 - [x] AWS is also not sending email as of 09.30.2020
   - all 3 started working again on 10.02.2020
 - [x] GitHub is synced with the cloud repos but code/function re-deployment after a change is still a manual process
+  - using GH Actions to re-deploy Lambda code on GH push/pull
