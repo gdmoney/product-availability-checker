@@ -77,9 +77,9 @@ Can be run **locally**, on **AWS Lambda**, on **GCP Cloud Functions**, or on **G
 
 ### GitHub Usage Instructions
 - GitHub > Settings > Secrets >  
-  - New secret > Name: `AWS_ACCESS_KEY_ID`, Value ... > Add secret  
-  - New secret > Name: `AWS_SECRET_ACCESS_KEY`, Value ... > Add secret
-  - New secret > Name: `AWS_REGION`, Value ... > Choose a region
+  - New secret > Name: `AWS_ACCESS_KEY_ID`, Value: ... > Add secret  
+  - New secret > Name: `AWS_SECRET_ACCESS_KEY`, Value: ... > Add secret
+  - New secret > Name: `AWS_REGION`, Value: ... > Add secret
 - GitHub > Actions > New workflow > set up a workflow yourself > ...
 
 [![](/GitHub/github.png)](/.github/workflows/run-on-gh-actions.yml)
