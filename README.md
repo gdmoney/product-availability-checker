@@ -81,9 +81,52 @@ Can be run **locally**, on **AWS Lambda**, on **GCP Cloud Functions**, or on **G
   - New secret > Name: `AWS_SECRET_ACCESS_KEY`, Value: ... > Add secret
   - New secret > Name: `AWS_REGION`, Value: ... > Add secret
 - GitHub > Actions > New workflow > set up a workflow yourself > ...
-  - modify the parameters below and then copy & paste in the editor
+  - copy & paste the output below in the editor
 
-[![](/GitHub/github.png)](/.github/workflows/run-on-gh-actions.yml)
+```
+name: run-on-gh-actions
+
+on:
+  push:
+    branches:
+    - master
+    paths:
+    - '**.py'
+  pull_request:
+    branches:
+    - master
+  schedule:
+  - cron: '0 12 * * *'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout source code
+      uses: actions/checkout@v2
+        
+    - name: Set up Python 3.8
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.8
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install beautifulsoup4
+        pip install boto3
+        pip install requests
+    - name: Configure AWS credentials
+      uses: aws-actions/configure-aws-credentials@v1
+      with:
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws-region: ${{ secrets.AWS_REGION }}
+
+    - name: Run
+      run: python __main__.py
+```
+
 #### Test
 - Actions > Workflows: `product-availability-checker` > Re-run jobs
 
