@@ -128,7 +128,7 @@ jobs:
 ```
 
 #### Test
-- Actions > Workflows: `product-availability-checker` > Re-run jobs
+- Actions > Workflows: `run-on-gh-actions` > Re-run jobs
 
 
 ## Build
