@@ -5,7 +5,7 @@ on:
     branches:
     - master
     paths:
-    - 'lambda_function.py'
+    - 'AWS/lambda_function.py'
   pull_request:
     branches:
     - master
