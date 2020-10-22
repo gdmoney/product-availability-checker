@@ -15,14 +15,10 @@ from email.mime.application import MIMEApplication
 BASE_URL = [
 'https://www.titan.fitness/strength/weight-plates/bumper-plates/230-lb-set-economy-black-bumper-plates/430117.html',
 'https://www.titan.fitness/strength/weight-plates/bumper-plates/45-lb-single-economy-black-bumper-plate/430105.2.html',
-'https://www.titan.fitness/strength/weight-plates/cast-iron-plates/45-lb-single-cast-iron-olympic-plates/430232.html',
-'https://www.titan.fitness/strength/weight-plates/cast-iron-plates/10-lb-pair-cast-iron-olympic-plates/430210.html',
-'https://www.titan.fitness/strength/weight-plates/cast-iron-plates/5-lb-pair-cast-iron-olympic-plates/430209.html',
-'https://www.titan.fitness/strength/dumbbells/rubber-coated-hex/pair-of-75-lb-black-rubber-coated-hex-dumbbells/421076.html',
-'https://www.titan.fitness/strength/dumbbells/rubber-coated-hex/pair-of-85-lb-black-rubber-coated-hex-dumbbells/421086.html',
-'https://www.titan.fitness/strength/dumbbells/rubber-coated-hex/pair-of-90-lb-black-rubber-coated-hex-dumbbells/421091.html',
-'https://www.titan.fitness/strength/dumbbells/neoprene/neoprene-light-weight-dumbbell-set---1%2C-2%2C-3-%2C-4-lb/420003.html',
-'https://www.titan.fitness/strength/specialty-machines/lower-body/economy-h-pnd/401027.html'
+'https://www.titan.fitness/strength/weight-plates/bumper-plates/25-lb-pair-economy-black-bumper-plates/430103.2.html',
+'https://www.titan.fitness/racks/rack-accessories/t-3-series/t-3-series-spotter-arms/400413.html',
+'https://www.titan.fitness/racks/rack-accessories/t-3-series/t-3-series-dual-pull-up-stabilizer-bar/400307.html',
+'https://www.titan.fitness/racks/rack-accessories/t-3-series/olympic-weight-plate-holder-for-t-3-power-rack-3-inchx2-inch-tube/400116.html'
 ]
 
 # loop through the URLs above
