@@ -91,7 +91,7 @@ on:
     branches:
     - master
     paths:
-    - '**.py'
+    - '__main__.py'
   pull_request:
     branches:
     - master
