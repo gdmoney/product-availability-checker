@@ -50,7 +50,7 @@ Can be run **locally**, on **AWS Lambda**, on **GCP Cloud Functions**, or on **G
 #### Automate
 - Designer > Add trigger > EventBridge > Rule: Create a new rule > Rule name ... > Rule type: Schedule expression > Schedule expression: `cron(0 13 * * ? *)` > Add  
 #### Update
-- Automated using GitHub Actions and the [`update-lambda`](/.github/workflows/run-on-gh-actions.yml) Workflow
+- Automated using GitHub Actions and the [`update-lambda`](/.github/workflows/update-lambda.yml) Workflow
 
 ![](AWS/aws.png)
 
