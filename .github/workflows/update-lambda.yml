@@ -22,7 +22,7 @@ jobs:
     - name: Zip folder
       uses: papeloto/action-zip@v1
       with:
-        files: AWS/
+        files: AWS/ lambda_function.py
         recursive: false
         dest: lambda.zip
 
