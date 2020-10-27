@@ -23,7 +23,7 @@ jobs:
       uses: papeloto/action-zip@v1
       with:
         files: AWS/
-        recursive: false
+        recursive: true
         dest: lambda.zip
 
     - name: Set up Python 3.8
