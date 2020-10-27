@@ -165,7 +165,7 @@ jobs:
 - [x] run new code in GCP
 - [x] run new code in GitHub Actions
 - [x] update documentation
-- [ ] separate the URL list from the code
+- [x] separate the URL list from the code
 
 
 ## Issues
