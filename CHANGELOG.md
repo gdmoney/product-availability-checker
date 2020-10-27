@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](https://semver.org/).
 
+## [v0.1.4] - 2020.10.27
+### Changed
+- removed the URL list from the code and into its own module named `urls.py`
+
 ## [v0.1.3] - 2020.10.14
 ### Changed
 - Configured GitHub to auto update Lambda using GH Actions
