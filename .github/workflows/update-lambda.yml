@@ -6,6 +6,7 @@ on:
     - master
     paths:
     - 'AWS/lambda_function.py'
+    - '.github/workflows/update-lambda.yml'
   pull_request:
     branches:
     - master
