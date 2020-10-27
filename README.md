@@ -92,6 +92,7 @@ on:
     - master
     paths:
     - '__main__.py'
+    - '.github/workflows/run-on-gh-actions.yml'
   pull_request:
     branches:
     - master
