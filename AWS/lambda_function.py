@@ -7,18 +7,10 @@ from bs4 import BeautifulSoup
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email.mime.application import MIMEApplication
-
-BASE_URL = [
-'https://www.titan.fitness/strength/weight-plates/bumper-plates/230-lb-set-economy-black-bumper-plates/430117.html',
-'https://www.titan.fitness/strength/weight-plates/bumper-plates/45-lb-single-economy-black-bumper-plate/430105.2.html',
-'https://www.titan.fitness/strength/weight-plates/bumper-plates/25-lb-pair-economy-black-bumper-plates/430103.2.html',
-'https://www.titan.fitness/racks/rack-accessories/t-3-series/t-3-series-spotter-arms/400413.html',
-'https://www.titan.fitness/racks/rack-accessories/t-3-series/t-3-series-dual-pull-up-stabilizer-bar/400307.html',
-'https://www.titan.fitness/racks/rack-accessories/t-3-series/olympic-weight-plate-holder-for-t-3-power-rack-3-inchx2-inch-tube/400116.html'
-]
+from urls import URL_LIST
 
 # loop through the URLs above
-for page in BASE_URL:
+for page in URL_LIST:
     # query each website and return html, parse the html using Beautiful Soup and store in variable 'soup'
     soup = BeautifulSoup(requests.get(page).content, 'html.parser')
 
