@@ -27,4 +27,7 @@ jobs:
         export_default_credentials: true
      
     - name: Run
-      run: gcloud info
+      run: |
+        gcloud functions deploy product-availability-checker ^
+          --region us-west2 ^
+          --source https://source.developers.google.com/projects/product-availability-checker/repos/github_gdmoney_product-availability-checker/moveable-aliases/master/paths/GCP
