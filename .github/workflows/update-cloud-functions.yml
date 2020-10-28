@@ -1,0 +1,30 @@
+name: update-cloud-functions
+
+on:
+  push:
+    branches:
+    - master
+    paths:
+    - 'GCP/main.py'
+    - '.github/workflows/update-cloud-functions.yml'
+  pull_request:
+    branches:
+    - master
+
+jobs:
+  
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out repo
+      uses: actions/checkout@v2
+
+    - name: Setup gcloud
+      uses: GoogleCloudPlatform/github-actions/setup-gcloud@master
+      with:
+        project_id: ${{ secrets.GCP_PROJECT_ID }}
+        service_account_key: ${{ secrets.GCP_SA_KEY }}
+        export_default_credentials: true
+     
+    - name: Run
+      run: gcloud info
