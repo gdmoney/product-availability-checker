@@ -70,7 +70,7 @@ Can be run **locally**, on **AWS Lambda**, on **GCP Cloud Functions**, or on **G
 #### Automate
 - Cloud Scheduler > Create Job > Select a region: ... > Name ... > Frequency: `0 7 * * *` > Timezone ... > Target: Pub/Sub > Topic ... > Payload ... > Create
 #### Update
-- Edit > Next > Deploy
+- Automated using GitHub Actions and the [`update-cloud-functions`](/.github/workflows/update-cloud-functions.yml) Workflow
 
 ![](GCP/gcp.png)
 
@@ -167,7 +167,7 @@ jobs:
 - [x] update documentation
 - [x] AWS Lambda auto deploy on repo changes using GitHub Actions
 - [x] separate the URL list from the code
-- [ ] GCP Cloud Functions auto deploy on repo changes using GitHub Actions
+- [x] GCP Cloud Functions auto deploy on repo changes using GitHub Actions
 
 
 ## Issues
