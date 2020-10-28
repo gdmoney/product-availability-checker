@@ -165,7 +165,9 @@ jobs:
 - [x] run new code in GCP
 - [x] run new code in GitHub Actions
 - [x] update documentation
+- [x] AWS Lambda auto deploy on repo changes using GitHub Actions
 - [x] separate the URL list from the code
+- [ ] GCP Cloud Functions auto deploy on repo changes using GitHub Actions
 
 
 ## Issues
