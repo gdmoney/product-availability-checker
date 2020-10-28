@@ -57,7 +57,7 @@ Can be run **locally**, on **AWS Lambda**, on **GCP Cloud Functions**, or on **G
 
 ### GCP Usage Instructions
 - download the `python-gcp.zip` file from the **[GCP](/GCP)** folder
-#### Sync Repos (Optional)
+#### Sync Repos
  - **[GCP Console](https://console.cloud.google.com)** > Cloud Source Repositories > Add repository > Connect external repository > Project: ... > Git provider: GitHub > ... > Connect selected repository
 #### Create a function
 - **[GCP Console](https://console.cloud.google.com)** > Cloud Functions > Create Function > Function name ... > Region ... > Trigger type:  Cloud Pub/Sub > Create a topic ... > Create Topic
