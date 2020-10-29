@@ -50,7 +50,7 @@ Can be run **locally**, on **AWS Lambda**, on **GCP Cloud Functions**, or on **G
 #### Automate
 - Designer > Add trigger > EventBridge > Rule: Create a new rule > Rule name ... > Rule type: Schedule expression > Schedule expression: `cron(0 13 * * ? *)` > Add  
 #### Update
-- Automated using GitHub Actions and the [`update-lambda`](/.github/workflows/update-lambda.yml) Workflow
+- Automated with GitHub Actions using the [`update-lambda`](/.github/workflows/update-lambda.yml) Workflow
 
 ![](AWS/aws.png)
 
@@ -70,7 +70,7 @@ Can be run **locally**, on **AWS Lambda**, on **GCP Cloud Functions**, or on **G
 #### Automate
 - Cloud Scheduler > Create Job > Select a region: ... > Name ... > Frequency: `0 7 * * *` > Timezone ... > Target: Pub/Sub > Topic ... > Payload ... > Create
 #### Update
-- Automated using GitHub Actions and the [`update-cloud-functions`](/.github/workflows/update-cloud-functions.yml) Workflow
+- Automated with GitHub Actions using the [`update-cloud-functions`](/.github/workflows/update-cloud-functions.yml) Workflow
 
 ![](GCP/gcp.png)
 
