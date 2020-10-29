@@ -2,7 +2,7 @@
 
 
 ## Project Overview
-Queries each website, checks product availability, and send an email if one of the products is available.  
+Queries each website, checks product availability, and sends an email if one of the products is available.  
 
 Can be run **locally**, on **AWS Lambda**, on **GCP Cloud Functions**, or on **GitHub Actions**.
 
