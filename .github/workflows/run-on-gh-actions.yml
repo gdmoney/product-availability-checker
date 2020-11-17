@@ -31,6 +31,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install beautifulsoup4
         pip install boto3
+        pip install importlib
         pip install requests
 
     - name: Configure AWS credentials
