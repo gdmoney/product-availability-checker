@@ -2,6 +2,9 @@ import os
 import requests
 import yagmail
 from bs4 import BeautifulSoup
+
+import urls
+importlib.reload(urls)
 from urls import URL_LIST
 
 # loop through the URLs above

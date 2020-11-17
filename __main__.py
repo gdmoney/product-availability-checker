@@ -4,13 +4,17 @@
 
 import boto3
 import email.utils
+import importlib
 import os
 import requests
-import smtplib  
+import smtplib
 from bs4 import BeautifulSoup
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email.mime.application import MIMEApplication
+
+import urls
+importlib.reload(urls)
 from urls import URL_LIST
 
 # loop through the URLs above
