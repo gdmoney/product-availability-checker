@@ -6,5 +6,5 @@ URL_LIST = [
 'https://www.titan.fitness/strength/dumbbells/rubber-coated-hex/pair-of-75-lb-black-rubber-coated-hex-dumbbells/421076.html',
 'https://www.titan.fitness/strength/dumbbells/rubber-coated-hex/pair-of-100-lb-black-rubber-coated-hex-dumbbells/421101.html',
 'https://www.titan.fitness/strength/barbells/accessories/mini-bar-jack-set-of-2/430019.html',
-'https://www.titan.fitness/strength/specialty-machines/upper-body/preacher-curl-station/400431.html'
+'https://www.titan.fitness/strength/specialty-machines/lower-body/indoor-tire-flipping-machine/401136.html'
 ]
