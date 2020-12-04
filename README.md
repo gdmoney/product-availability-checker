@@ -19,7 +19,7 @@ Can be run **locally**, on **AWS Lambda**, on **GCP Cloud Functions**, or on **G
 - **[Possible Imrovements](#possible-improvements)**
   
 
-## Components
+## Solution Components
 - **Python 3.8**
   - various libraries: Beautiful Soup, Boto3, Requests, Yagmail, etc.
 - **AWS**
