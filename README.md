@@ -16,7 +16,7 @@ Can be run **locally**, on **AWS Lambda**, on **GCP Cloud Functions**, or on **G
 - **[Build](#Build)**
   - **[AWS](#aws-build-instructions)**
   - **[GCP](#gcp-build-instructions)**
-- **[Possible Imrovements](#possible-improvements)**
+- **[Possible Improvements](#possible-improvements)**
   
 
 ## Solution Components
