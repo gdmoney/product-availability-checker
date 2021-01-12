@@ -1,6 +1,4 @@
 URL_LIST = [
-'https://www.titan.fitness/strength/weight-plates/cast-iron-plates/2.5-lb-pair-cast-iron-olympic-plates/430208.html',
-'https://www.titan.fitness/strength/weight-plates/cast-iron-plates/5-lb-pair-cast-iron-olympic-plates/430209.html',
 'https://www.titan.fitness/strength/dumbbells/rubber-coated-hex/75-lb-rubber-hex-dumbbells/421076.html',
 'https://www.titan.fitness/strength/dumbbells/rubber-coated-hex/80-lb-rubber-hex-dumbbells/421081.html',
 'https://www.titan.fitness/strength/dumbbells/rubber-coated-hex/85-lb-rubber-hex-dumbbells/421086.html',
