@@ -13,7 +13,7 @@ import urls
 importlib.reload(urls)
 from urls import URL_LIST
 
-# loop through the URLs above
+# loop through the URLs
 for page in URL_LIST:
     # query each website and return html, parse the html using Beautiful Soup and store in variable 'soup'
     soup = BeautifulSoup(requests.get(page).content, 'html.parser')
