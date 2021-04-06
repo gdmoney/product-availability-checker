@@ -44,8 +44,9 @@ Can be run **locally**, on **AWS Lambda**, on **GCP Cloud Functions**, or on **G
   - in IAM, attach the `AmazonSESFullAccess` policy to the Role listed under Permissions
 - Actions > upload a .zip file: `python-aws.zip` > Save
 #### Test
-- Test > Create new test event > Event template: hello-world > Event name ... > Create
-- Test
+- Code > Test
+or
+- Test > Invoke
 #### Automate
 - Designer > Add trigger > EventBridge > Rule: Create a new rule > Rule name ... > Rule type: Schedule expression > Schedule expression: `cron(0 13 * * ? *)` > Add  
 #### Update
