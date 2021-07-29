@@ -17,7 +17,7 @@ Can be run **locally**, on **AWS Lambda**, on **GCP Cloud Functions**, or on **G
   - **[AWS](#aws-build-instructions)**
   - **[GCP](#gcp-build-instructions)**
 - **[Possible Improvements](#possible-improvements)**
-  
+
 
 ## Solution Components
 - **Python 3.8**
@@ -44,7 +44,7 @@ Can be run **locally**, on **AWS Lambda**, on **GCP Cloud Functions**, or on **G
   - in IAM, attach the `AmazonSESFullAccess` policy to the Role listed under Permissions
 - Actions > upload a .zip file: `python-aws.zip` > Save
 #### Test
-- Code > Test
+- Code > Test  
 or
 - Test > Invoke
 #### Automate
@@ -105,7 +105,7 @@ jobs:
     steps:
     - name: Checkout source code
       uses: actions/checkout@v2
-        
+
     - name: Set up Python 3.8
       uses: actions/setup-python@v2
       with:
