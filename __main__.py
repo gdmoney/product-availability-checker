@@ -26,7 +26,7 @@ for page in URL_LIST:
     product_name_box = soup.find('span', attrs={'class': 'h1 product-name text-uppercase d-none d-sm-block'})
     product_name = product_name_box.text.strip()
 
-    price_box = soup.find('span', attrs={'class': 'sup-show'})
+    price_box = soup.find('span', attrs={'class': 'sup-hide'})
     price = price_box.text.strip()
 
     availability_box = soup.find('span', attrs={'class': 'availability-msg'})
