@@ -24,7 +24,7 @@ for page in URL_LIST:
 
     # take out the <div> of name and get its value
     product_name_box = soup.find('span', attrs={'class': 'h1 product-name text-uppercase d-none d-sm-block'})
-    product_name = product_name_box.text.strip()
+    product_name = product_name_box.strip()
 
     price_box = soup.find('span', attrs={'class': 'sup-hide'})
     price = price_box.text.strip()
