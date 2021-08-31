@@ -23,8 +23,8 @@ for page in URL_LIST:
     soup = BeautifulSoup(requests.get(page).content, 'html.parser')
 
     # take out the <div> of name and get its value
-    # product_name_box = soup.find('div', attrs={'class': 'h1 product-name text-uppercase d-none d-sm-block'})
-    # product_name = product_name_box.text.strip()
+    product_name_box = soup.find('h1', attrs={'class': 'h1 product-name text-uppercase d-none d-sm-block'})
+    product_name = product_name_box.text.strip()
 
     price_box = soup.find('span', attrs={'class': 'sup-hide'})
     price = price_box.text.strip()
@@ -32,8 +32,7 @@ for page in URL_LIST:
     availability_box = soup.find('span', attrs={'class': 'availability-msg'})
     availability = availability_box.text.strip()
 
-    # status = 'Product Name: ' + product_name + '\n' + 'Price:        ' + price + '\n' + 'Availability: ' + availability
-    status = 'Price:        ' + price + '\n' + 'Availability: ' + availability
+    status = 'Product Name: ' + product_name + '\n' + 'Price:        ' + price + '\n' + 'Availability: ' + availability
 
     # create a text file
     with open('titan.txt', 'a') as f:
