@@ -30,7 +30,7 @@ for page in URL_LIST:
     # price = price_box.text.strip()
 
     availability_box = soup.find('span', attrs={'class': 'availability-msg'})
-    a# vailability = availability_box.text.strip()
+    # availability = availability_box.text.strip()
 
     status = 'Product Name: ' + product_name_box + '\n' + 'Price:        ' + price_box + '\n' + 'Availability: ' + availability_box
 
