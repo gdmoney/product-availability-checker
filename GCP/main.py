@@ -32,7 +32,7 @@ for page in URL_LIST:
 
 def send_email():
     FROM = 'george.davitiani@gmail.com'
-    TO = 'george.davitiani@gmail.com'
+    TO = 'george.davitiani@hey.com'
     subject = 'Titan Fitness Inventory Report'
     #contents = '/tmp/titan.txt'
     contents = [yagmail.inline('/tmp/titan.txt')]
