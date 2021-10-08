@@ -26,6 +26,7 @@ Can be run **locally**, on **AWS Lambda**, on **GCP Cloud Functions**, or on **G
   - Lambda
   - SES
   - EventBridge
+  - SNS
 - **GCP**
   - Cloud Functions
   - Cloud Source Repositories
