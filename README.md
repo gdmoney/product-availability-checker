@@ -12,7 +12,7 @@ Can be run **locally**, on **AWS Lambda**, on **GCP Cloud Functions**, or on **G
 - **[Usage](#usage)**
   - **[AWS](#aws-usage-instructions)**
   - **[GCP](#gcp-usage-instructions)**
-  - **[GitHub Actions](#github-usage-instructions)**
+  - **[GitHub Actions](#github-actions-usage-instructions)**
 - **[Build](#Build)**
   - **[AWS](#aws-build-instructions)**
   - **[GCP](#gcp-build-instructions)**
