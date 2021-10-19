@@ -76,7 +76,7 @@ or
 ![](GCP/gcp.png)
 
 
-### GitHub Usage Instructions
+### GitHub Actions Usage Instructions
 - GitHub > Settings > Secrets >  
   - New secret > Name: `AWS_ACCESS_KEY_ID`, Value: ... > Add secret  
   - New secret > Name: `AWS_SECRET_ACCESS_KEY`, Value: ... > Add secret
