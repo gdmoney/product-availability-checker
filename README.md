@@ -8,7 +8,7 @@ Can be run **locally**, on **AWS Lambda**, on **GCP Cloud Functions**, or on **G
 
 
 ## Table of Contents
-- **[Solution Components](#components)**
+- **[Solution Components](#solution-components)**
 - **[Usage](#usage)**
   - **[AWS](#aws-usage-instructions)**
   - **[GCP](#gcp-usage-instructions)**
