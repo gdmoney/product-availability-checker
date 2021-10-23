@@ -51,7 +51,7 @@ or
 #### Automate
 - Designer > Add trigger > EventBridge > Rule: Create a new rule > Rule name ... > Rule type: Schedule expression > Schedule expression: `cron(0 13 * * ? *)` > Add  
 #### Update
-- Automated with GitHub Actions using the [`update-lambda`](/.github/workflows/update-lambda.yml) Workflow
+- Automated with GitHub Actions using the [`update-lambda`](/.github/workflows/update-lambda.yml) workflow
 
 ![](AWS/aws.png)
 
@@ -71,7 +71,7 @@ or
 #### Automate
 - Cloud Scheduler > Create Job > Select a region: ... > Name ... > Frequency: `0 7 * * *` > Timezone ... > Target: Pub/Sub > Topic ... > Payload ... > Create
 #### Update
-- Automated with GitHub Actions using the [`update-cloud-functions`](/.github/workflows/update-cloud-functions.yml) Workflow
+- Automated with GitHub Actions using the [`update-cloud-functions`](/.github/workflows/update-cloud-functions.yml) workflow
 
 ![](GCP/gcp.png)
 
