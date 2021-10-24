@@ -12,6 +12,7 @@ on:
     branches:
     - master
   schedule:
+  # every Monday at 8am PDT
   - cron: '0 12 * * 1'
   workflow_dispatch:
 
