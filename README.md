@@ -78,9 +78,9 @@ or
 
 ### GitHub Actions Usage Instructions
 - GitHub > Settings > Secrets >  
-  - New secret > Name: `AWS_ACCESS_KEY_ID`, Value: ... > Add secret  
-  - New secret > Name: `AWS_SECRET_ACCESS_KEY`, Value: ... > Add secret
-  - New secret > Name: `AWS_REGION`, Value: ... > Add secret
+  - New repository secret > Name: `AWS_ACCESS_KEY_ID`, Value: ... > Add secret  
+  - New repository secret > Name: `AWS_SECRET_ACCESS_KEY`, Value: ... > Add secret
+  - New repository secret > Name: `AWS_REGION`, Value: ... > Add secret
 - GitHub > Actions > New workflow > set up a workflow yourself > ...
   - copy & paste the output below in the editor
 
