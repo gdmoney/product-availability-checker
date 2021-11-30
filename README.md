@@ -93,12 +93,15 @@ on:
     - master
     paths:
     - '__main__.py'
+    - 'urls.py'
     - '.github/workflows/run-on-gh-actions.yml'
   pull_request:
     branches:
     - master
   schedule:
-  - cron: '0 12 * * *'
+  # every Monday at 5am PST
+  - cron: '0 13 * * 1'
+  workflow_dispatch:
 
 jobs:
   deploy:
@@ -106,7 +109,7 @@ jobs:
     steps:
     - name: Checkout source code
       uses: actions/checkout@v2
-
+        
     - name: Set up Python 3.8
       uses: actions/setup-python@v2
       with:
