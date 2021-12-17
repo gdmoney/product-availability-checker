@@ -37,7 +37,7 @@ for page in URL_LIST:
 def send_email():
     CHARSET = 'utf-8'
     AWS_REGION = 'us-west-2'
-    SENDER = 'george.davitiani@hey.com'
+    SENDER = 'george.davitiani@gmail.com'
     RECIPIENT = 'george.davitiani@hey.com'
     SUBJECT = 'Titan Fitness Inventory Report'
     ATTACHMENT = '/tmp/inventory.txt'

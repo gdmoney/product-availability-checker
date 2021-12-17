@@ -31,7 +31,7 @@ for page in URL_LIST:
         f.write(status + '\n' + '\n')
 
 def send_email():
-    FROM = 'george.davitiani@hey.com'
+    FROM = 'george.davitiani@gmail.com'
     TO = 'george.davitiani@hey.com'
     subject = 'Inventory Report'
     #contents = '/tmp/inventory.txt'
