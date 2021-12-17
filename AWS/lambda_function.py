@@ -31,22 +31,22 @@ for page in URL_LIST:
     status = 'Product Name: ' + product_name + '\n' + 'Price:        ' + price + '\n' + 'Availability: ' + availability
 
     # create a text file
-    with open ('/tmp/titan.txt', 'a') as f:
+    with open ('/tmp/inventory.txt', 'a') as f:
         f.write(status + '\n' + '\n')
 
 def send_email():
     CHARSET = 'utf-8'
     AWS_REGION = 'us-west-2'
-    SENDER = 'george.davitiani@gmail.com'
+    SENDER = 'george.davitiani@hey.com'
     RECIPIENT = 'george.davitiani@hey.com'
     SUBJECT = 'Titan Fitness Inventory Report'
-    ATTACHMENT = '/tmp/titan.txt'
-    BODY_TEXT = ('email body text.')
+    ATTACHMENT = '/tmp/inventory.txt'
+    BODY_TEXT = ('email body text goes here.')
     BODY_HTML = """<html>
         <head></head>
         <body>
-            <h1> email headline </h1>
-            <p> email body text. </p>
+            <h1> email headline goes here</h1>
+            <p> email body text goes here. </p>
         </body>
         </html>"""
 
@@ -56,8 +56,8 @@ def send_email():
     # Create a multipart/mixed parent container.
     msg = MIMEMultipart('mixed')
     # Add subject, from and to lines.
-    msg['Subject'] = SUBJECT 
-    msg['From'] = SENDER 
+    msg['Subject'] = SUBJECT
+    msg['From'] = SENDER
     msg['To'] = RECIPIENT
 
     # Create a multipart/alternative child container.
@@ -92,7 +92,7 @@ def send_email():
 
 # email if keywords are found in the text file
 def lambda_handler(event, context):
-    with open('/tmp/titan.txt') as f:
+    with open('/tmp/inventory.txt') as f:
         if 'In Stock' in f.read():
             send_email()
         elif 'Backorder' in f.read():

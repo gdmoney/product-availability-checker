@@ -27,21 +27,21 @@ for page in URL_LIST:
     status = 'Product Name: ' + product_name + '\n' + 'Price:        ' + price + '\n' + 'Availability: ' + availability
 
     # create a text file
-    with open ('/tmp/titan.txt', 'a') as f:
+    with open ('/tmp/inventory.txt', 'a') as f:
         f.write(status + '\n' + '\n')
 
 def send_email():
-    FROM = 'george.davitiani@gmail.com'
+    FROM = 'george.davitiani@hey.com'
     TO = 'george.davitiani@hey.com'
-    subject = 'Titan Fitness Inventory Report'
-    #contents = '/tmp/titan.txt'
-    contents = [yagmail.inline('/tmp/titan.txt')]
+    subject = 'Inventory Report'
+    #contents = '/tmp/inventory.txt'
+    contents = [yagmail.inline('/tmp/inventory.txt')]
     yag = yagmail.SMTP(FROM, 'zmytgndtkxdukwwk')
     yag.send(TO, subject, contents)
 
 # email if keywords are found in the text file
 def hello_pubsub(event, context):
-    with open('/tmp/titan.txt') as f:
+    with open('/tmp/inventory.txt') as f:
         if 'In Stock' in f.read():
             send_email()
         elif 'Backorder' in f.read():
