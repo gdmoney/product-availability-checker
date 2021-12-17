@@ -27,7 +27,7 @@ for each_url in URL_LIST:
         availability = availability_box.text.strip()
 
         status = 'Product Name: ' + product_name + '\n' + 'Price:        ' + price + '\n' + 'Availability: ' + availability
-    except Exception
+    except Exception:
         continue
     else:
         # create a text file
