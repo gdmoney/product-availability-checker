@@ -2,7 +2,7 @@
 
 
 ## Project Overview
-Queries each URL, checks product availability, and sends an email if one of the products is available.  
+Queries a list of URLs, checks product availability, and sends an email if one of the products is in stock.  
 
 Can be run **locally**, on **AWS Lambda**, on **GCP Cloud Functions**, or on **GitHub Actions**.
 
