@@ -19,25 +19,28 @@ from urls import URL_LIST
 
 # loop through the URLs
 for each_url in URL_LIST:
-    # query each website and return html, parse the html using Beautiful Soup and store in variable 'soup'
-    page = requests.get(each_url)
-    soup = BeautifulSoup(page.content, 'html.parser')
+    try:
+        # query each website and return html, parse the html using Beautiful Soup and store in variable 'soup'
+        page = requests.get(each_url)
+        soup = BeautifulSoup(page.content, 'html.parser')
 
-    # take out the <div> of name and get its value
-    product_name_box = soup.find('h1', attrs={'class': 'h1 product-name text-uppercase d-none d-sm-block large-devices'})
-    product_name = product_name_box.text.strip()
+        # take out the <div> of name and get its value
+        product_name_box = soup.find('h1', attrs={'class': 'h1 product-name text-uppercase d-none d-sm-block large-devices'})
+        product_name = product_name_box.text.strip()
 
-    price_box = soup.find('span', attrs={'class': 'sup-hide'})
-    price = price_box.text.strip()
+        price_box = soup.find('span', attrs={'class': 'sup-hide'})
+        price = price_box.text.strip()
 
-    availability_box = soup.find('span', attrs={'class': 'availability-msg'})
-    availability = availability_box.text.strip()
+        availability_box = soup.find('span', attrs={'class': 'availability-msg'})
+        availability = availability_box.text.strip()
 
-    status = 'Product Name: ' + product_name + '\n' + 'Price:        ' + price + '\n' + 'Availability: ' + availability
-
-    # create a text file
-    with open('inventory.txt', 'a') as f:
-        f.write(status + '\n' + '\n')
+        status = 'Product Name: ' + product_name + '\n' + 'Price:        ' + price + '\n' + 'Availability: ' + availability
+    except Exception:
+        continue
+    else:
+        # create a text file
+        with open('inventory.txt', 'a') as f:
+            f.write(status + '\n' + '\n')
 
 def send_email():
     CHARSET = 'utf-8'
