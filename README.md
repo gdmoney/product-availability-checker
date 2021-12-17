@@ -156,11 +156,11 @@ jobs:
 - [x] email only if status =/= Out of Stock
 - [ ] email only the products that are available or on backorder
 - [x] run it on AWS Lambda
-- [X] sync GitHub and AWS CodePipeline
+- [x] sync GitHub and AWS CodePipeline
 - [x] sync GitHub and GCP Cloud Source Repositories
 - [x] run it on GCP Functions
 - [x] add price
-- [x] run it with GitHub Actions
+- [x] run it on GitHub Actions
 - [ ] insert info in the email body (instead of the attachment)
 - [ ] hyperlink product webpage URLs to the product names
 - [x] use AWS SNS, SQS, or SES to send email instead of YagMail (using SES)
@@ -172,3 +172,4 @@ jobs:
 - [x] AWS Lambda auto deploy on repo changes using GitHub Actions
 - [x] separate the URL list from the code
 - [x] GCP Cloud Functions auto deploy on repo changes using GitHub Actions
+- [x] add URL error handling 
