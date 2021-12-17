@@ -73,7 +73,36 @@ or
 #### Update
 - Automated with GitHub Actions using the [`update-cloud-functions`](/.github/workflows/update-cloud-functions.yml) workflow
 
-![](GCP/gcp.png)
+```
+{
+  "name": "projects/product-availability-checker/locations/us-west2/functions/product-availability-checker",
+  "sourceRepository": {
+    "url": "https://source.developers.google.com/projects/product-availability-checker/repos/github_gdmoney_product-availability-checker/moveable-aliases/master/paths/GCP",
+    "deployedUrl": "https://source.developers.google.com/projects/product-availability-checker/repos/github_gdmoney_product-availability-checker/revisions/f4f0acb61bf498b4f6b18e450bee0e8fef39f79b/paths/GCP"
+  },
+  "eventTrigger": {
+    "eventType": "google.pubsub.topic.publish",
+    "resource": "projects/product-availability-checker/topics/pac-topic",
+    "service": "pubsub.googleapis.com",
+    "failurePolicy": {
+    }
+  },
+  "status": "ACTIVE",
+  "entryPoint": "hello_pubsub",
+  "timeout": "60s",
+  "availableMemoryMb": 256,
+  "serviceAccountEmail": "product-availability-checker@appspot.gserviceaccount.com",
+  "updateTime": "2021-12-17T20:23:12.847Z",
+  "versionId": "57",
+  "labels": {
+    "deployment-tool": "cli-gcloud"
+  },
+  "runtime": "python38",
+  "ingressSettings": "ALLOW_ALL",
+  "buildId": "9cb2ba19-bb7d-49ed-9118-df829bea7aa1",
+  "buildName": "projects/917625258949/locations/us-west2/builds/9cb2ba19-bb7d-49ed-9118-df829bea7aa1"
+}
+```
 
 
 ### GitHub Actions Usage Instructions
