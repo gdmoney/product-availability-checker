@@ -14,9 +14,10 @@ importlib.reload(urls)
 from urls import URL_LIST
 
 # loop through the URLs
-for page in URL_LIST:
+for each_url in URL_LIST:
     # query each website and return html, parse the html using Beautiful Soup and store in variable 'soup'
-    soup = BeautifulSoup(requests.get(page).content, 'html.parser')
+    page = requests.get(each_url)
+    soup = BeautifulSoup(page.content, 'html.parser')
 
     # take out the <div> of name and get its value
     product_name_box = soup.find('h1', attrs={'class': 'h1 product-name text-uppercase d-none d-sm-block large-devices'})
