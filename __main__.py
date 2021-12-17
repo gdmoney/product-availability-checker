@@ -18,9 +18,9 @@ importlib.reload(urls)
 from urls import URL_LIST
 
 # loop through the URLs
-for page in URL_LIST:
+for website in URL_LIST:
     # query each website and return html, parse the html using Beautiful Soup and store in variable 'soup'
-    page = requests.get()
+    page = requests.get(website)
     soup = BeautifulSoup(page.content, 'html.parser')
 
     # take out the <div> of name and get its value
