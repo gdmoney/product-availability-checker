@@ -37,7 +37,7 @@ for each_url in URL_LIST:
 def send_email():
     FROM = 'george.davitiani@gmail.com'
     TO = 'george.davitiani@hey.com'
-    subject = 'Inventory Report'
+    subject = 'Inventory Report - GCP'
     #contents = '/tmp/inventory.txt'
     contents = [yagmail.inline('/tmp/inventory.txt')]
     yag = yagmail.SMTP(FROM, 'zmytgndtkxdukwwk')

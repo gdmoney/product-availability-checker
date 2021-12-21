@@ -43,8 +43,8 @@ def send_email():
     AWS_REGION = 'us-west-2'
     SENDER = 'george.davitiani@gmail.com'
     RECIPIENT = 'george.davitiani@hey.com'
-    SUBJECT = 'Titan Fitness Inventory Report'
-    ATTACHMENT = '/tmp/inventory.txt'
+    SUBJECT = 'Inventory Report - AWS'
+    ATTACHMENT = 'inventory.txt'
     BODY_TEXT = ('email body text goes here.')
     BODY_HTML = """<html>
         <head></head>
