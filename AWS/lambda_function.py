@@ -44,7 +44,7 @@ def send_email():
     SENDER = 'george.davitiani@gmail.com'
     RECIPIENT = 'george.davitiani@hey.com'
     SUBJECT = 'Inventory Report - AWS'
-    ATTACHMENT = 'inventory.txt'
+    ATTACHMENT = '/tmp/inventory.txt'
     BODY_TEXT = ('email body text goes here.')
     BODY_HTML = """<html>
         <head></head>
