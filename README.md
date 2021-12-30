@@ -181,7 +181,7 @@ jobs:
 
 
 ## Possible Improvements
-- [x] automate to run daily
+- [x] automate to run daily or weekly
 - [x] email only if status =/= Out of Stock
 - [ ] email only the products that are available or on backorder
 - [x] run it on AWS Lambda
