@@ -7,6 +7,6 @@ importlib==1.0.4
 requests==2.31.0
 six==1.15.0
 soupsieve==2.0.1
-urllib3==1.26.6
+urllib3==1.26.19
 webencodings==0.5.1
 yagmail==0.11.224
